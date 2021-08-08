@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1012685908059",
+    "firebase_url": "https://pretty-land-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pretty-land",
+    "storage_bucket": "pretty-land.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012685908059:android:67e69d0593bd5da6d4777e",
+        "android_client_info": {
+          "package_name": "com.prettylandfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012685908059-lkk5aqnvgbhgmrm79pvudju6buu7c6km.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeIIRnO__DaXeV3bcqIVx-YPF-ovoK574"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012685908059-lkk5aqnvgbhgmrm79pvudju6buu7c6km.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
