@@ -4,6 +4,7 @@ const showNotification = (title, message) => {
   PushNotification.localNotification({
     title: title,
     message: message,
+    channelId: 'prettyland-message',
   });
 };
 
@@ -12,6 +13,7 @@ const handleScheduleNotification = (title, message) => {
     title: title,
     message: message,
     date: new Date(Date.now() + 5 * 1000),
+    channelId: 'prettyland-message',
   });
 };
 

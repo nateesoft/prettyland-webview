@@ -27,7 +27,7 @@ const App = () => {
       </TouchableOpacity>
       <TouchableOpacity activeOpacity={0.6} onPress={handleCancel}>
         <View style={styles.button}>
-          <Text style={styles.buttonTitle}>Click me to get notification</Text>
+          <Text style={styles.buttonTitle}>Cancel All Message</Text>
         </View>
       </TouchableOpacity>
     </View>
