@@ -2,12 +2,14 @@
 npx react-native init prettyLandFirebase
 
 cd prettyLandFirebase && npx react-native run-android
+https://github.com/zo0r/react-native-push-notification
 ## fix bug after init android project
 -mkdir android/app/src/main/assets
 -npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
 -npx react-native run-android
 
 cd prettyLandFirebase" && npx react-native run-ios
+https://www.npmjs.com/package/@react-native-community/push-notification-ios
 ## fix bug after init ios project
 cd ios && npx pod-install
 -open xcode and build (build success without space name of project or path)

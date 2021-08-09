@@ -40,6 +40,7 @@
 		1AE2067D6738AD2D27E5A337 /* Pods-prettyLandFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prettyLandFirebase.debug.xcconfig"; path = "Target Support Files/Pods-prettyLandFirebase/Pods-prettyLandFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		39CAB833900D8F5FBBE1A80F /* Pods-prettyLandFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prettyLandFirebase.release.xcconfig"; path = "Target Support Files/Pods-prettyLandFirebase/Pods-prettyLandFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		4AE2C10C26BFA3C500286FE7 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		4AFA006C26BFCFCA002D4820 /* prettyLandFirebase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = prettyLandFirebase.entitlements; path = prettyLandFirebase/prettyLandFirebase.entitlements; sourceTree = "<group>"; };
 		6BB5926AC1229B70810B02E4 /* Pods-prettyLandFirebase-prettyLandFirebaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prettyLandFirebase-prettyLandFirebaseTests.debug.xcconfig"; path = "Target Support Files/Pods-prettyLandFirebase-prettyLandFirebaseTests/Pods-prettyLandFirebase-prettyLandFirebaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7BD2BFD0D5B3D4DBB18BF5AE /* libPods-prettyLandFirebase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-prettyLandFirebase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = prettyLandFirebase/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 		13B07FAE1A68108700A75B9A /* prettyLandFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				4AFA006C26BFCFCA002D4820 /* prettyLandFirebase.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -501,7 +503,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = prettyLandFirebase/prettyLandFirebase.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VF5JSC4YX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = prettyLandFirebase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -517,6 +521,7 @@
 				PRODUCT_NAME = prettyLandFirebase;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -527,7 +532,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = prettyLandFirebase/prettyLandFirebase.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VF5JSC4YX;
 				INFOPLIST_FILE = prettyLandFirebase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -541,6 +548,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = prettyLandFirebase;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
