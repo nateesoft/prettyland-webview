@@ -162,7 +162,7 @@ const LoginScreen = ({ navigation, route }) => {
             borderWidth: 1,
             borderColor: 'gray',
           }}
-          onPress={() => navigate('Login-Form')}
+          onPress={() => navigate('Login')}
         />
         <Button
           title="ลงทะเบียน (Register)"
@@ -176,7 +176,7 @@ const LoginScreen = ({ navigation, route }) => {
             width: 250,
             height: 45,
           }}
-          onPress={() => navigate('Partner-Login-Form')}
+          onPress={() => navigate('Register')}
         />
         <TouchableNativeFeedback onPress={() => LinkToLineContact()}>
           <Text style={styles.textFooter1}>Contact Us</Text>

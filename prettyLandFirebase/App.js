@@ -2,10 +2,13 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import WelcomeApp from './src/screen';
-import HomeScreen from './src/screen/HomeScreen';
-import DetailScreen from './src/screen/DetailScreen';
-import NotificationScreen from './src/screen/NotificationScreen';
+import WelcomeApp from './src/screens';
+import HomeScreen from './src/screens/HomeScreen';
+import DetailScreen from './src/screens/DetailScreen';
+import NotificationScreen from './src/screens/NotificationScreen';
+
+import RegisterHome from './src/screens/register';
+import LoginHome from './src/screens/login';
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +35,18 @@ const App = () => {
           name="Detail"
           component={DetailScreen}
           options={{ title: 'Detail' }}
+        />
+        {/* Register Form */}
+        <Stack.Screen
+          name="Register"
+          component={RegisterHome}
+          options={{ title: 'Register', headerShown: false }}
+        />
+        {/* Login Form */}
+        <Stack.Screen
+          name="Login"
+          component={LoginHome}
+          options={{ title: 'Login', headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
