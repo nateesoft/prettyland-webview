@@ -18,11 +18,15 @@
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.0.3",
     "firebase": "^8.9.0",
+    "moment": "^2.29.1",
     "react": "17.0.1",
     "react-native": "0.64.2",
+    "react-native-elements": "^3.4.2",
     "react-native-push-notification": "^7.4.0",
     "react-native-safe-area-context": "^3.3.0",
-    "react-native-screens": "^3.5.0"
+    "react-native-screens": "^3.5.0",
+    "react-native-uuid": "^2.0.1",
+    "react-native-vector-icons": "^8.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
