@@ -7,7 +7,7 @@ import {
   SafeAreaView,
 } from 'react-native';
 import { Button, Text, Input } from 'react-native-elements';
-// import { FontAwesome } from 'react-native-vector-icons';
+import { FontAwesome } from 'react-native-vector-icons';
 import base64 from 'react-native-base64';
 
 import { getMemberProfile } from '../../../apis';
@@ -115,14 +115,14 @@ const ViewProfileScreen = ({ navigation, route }) => {
             />
           </View>
           <Button
-            // icon={
-            //   <FontAwesome
-            //     name="save"
-            //     size={20}
-            //     color="white"
-            //     style={{ marginRight: 5 }}
-            //   />
-            // }
+            icon={
+              <FontAwesome
+                name="save"
+                size={20}
+                color="white"
+                style={{ marginRight: 5 }}
+              />
+            }
             iconLeft
             buttonStyle={styles.btnSave}
             title="บันทึกข้อมูล"

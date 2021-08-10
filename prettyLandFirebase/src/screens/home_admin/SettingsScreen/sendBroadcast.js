@@ -13,7 +13,7 @@ import {
 } from 'react-native';
 import * as ImagePicker from 'react-native-image-picker';
 import { Button as ButtonAction, Text } from 'react-native-elements';
-// import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import uuid from 'react-native-uuid';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import Moment from 'moment';
@@ -274,14 +274,14 @@ const SendBroadcast = ({ navigation, route }) => {
           </View>
           <View style={{ alignSelf: 'center', width: 200, marginVertical: 10 }}>
             <Button
-              // icon={
-              //   <Icon
-              //     name="file"
-              //     size={15}
-              //     color="white"
-              //     style={{ marginRight: 5 }}
-              //   />
-              // }
+              icon={
+                <Icon
+                  name="file"
+                  size={15}
+                  color="white"
+                  style={{ marginRight: 5 }}
+                />
+              }
               buttonStyle={{ marginTop: 10 }}
               title="เลือกไฟล์รูปภาพ"
               onPress={pickImage}
@@ -303,14 +303,14 @@ const SendBroadcast = ({ navigation, route }) => {
             />
           )}
           <ButtonAction
-            // icon={
-            //   <Icon
-            //     name="save"
-            //     size={20}
-            //     color="white"
-            //     style={{ marginRight: 5 }}
-            //   />
-            // }
+            icon={
+              <Icon
+                name="save"
+                size={20}
+                color="white"
+                style={{ marginRight: 5 }}
+              />
+            }
             iconLeft
             buttonStyle={styles.btnSend}
             title="บันทึกข้อมูล"

@@ -8,7 +8,7 @@ import {
   LogBox,
 } from 'react-native';
 import { Button } from 'react-native-elements';
-// import { MaterialIcons } from 'react-native-vector-icons';
+import { MaterialIcons } from 'react-native-vector-icons';
 
 import { AppConfig } from '../../Constants';
 
@@ -74,7 +74,7 @@ const LogoutScreen = ({ navigation, route }) => {
             borderRadius: 5,
             paddingHorizontal: 15,
           }}
-          // icon={<MaterialIcons name="logout" size={24} color="white" />}
+          icon={<MaterialIcons name="logout" size={24} color="white" />}
         />
       </View>
     </ImageBackground>

@@ -12,10 +12,10 @@ import {
 import { Button } from 'react-native-elements/dist/buttons/Button';
 import base64 from 'react-native-base64';
 import uuid from 'react-native-uuid';
-// import AntDesign from 'react-native-vector-icons/AntDesign';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 import { AppConfig } from '../../Constants';
-// import { GetIcon } from '../../components/GetIcons';
+import { GetIcon } from '../../components/GetIcons';
 import firebase from '../../util/firebase';
 import { getDocument, snapshotToArray } from '../../util';
 import { saveNewMember } from '../../apis';
@@ -24,8 +24,6 @@ const RegisterLoginForm = ({ navigation, route }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [rePassword, setRePassword] = useState('');
-
-  const signIn = () => {};
 
   const encryptPassword = password => {
     return base64.encode(password);
@@ -79,7 +77,11 @@ const RegisterLoginForm = ({ navigation, route }) => {
           saveNewMember(newId, saveData)
             .then(res => {
               if (res) {
-                signIn({ username, password, screen: 'admin' });
+                // signIn({ username, password, screen: 'admin' });
+                navigation.navigate('RegisterPlanForm', {
+                  userId: newId,
+                  status: memberData.status,
+                });
               }
             })
             .catch(err => {
@@ -112,7 +114,7 @@ const RegisterLoginForm = ({ navigation, route }) => {
                 <Text style={{ color: 'red' }}>ระบุชื่อเข้าใช้งาน</Text>
               )}
               <View style={styles.formControl}>
-                {/* <GetIcon type="ad" name="user" /> */}
+                <GetIcon type="ad" name="user" />
                 <TextInput
                   style={styles.textInput}
                   placeholder="ข้อมูลผู้ใช้งาน"
@@ -129,7 +131,7 @@ const RegisterLoginForm = ({ navigation, route }) => {
                 </Text>
               )}
               <View style={styles.formControl}>
-                {/* <GetIcon type="mci" name="form-textbox-password" /> */}
+                <GetIcon type="mci" name="form-textbox-password" />
                 <TextInput
                   style={styles.textInput}
                   placeholder="กำหนดรหัสผ่าน"
@@ -145,7 +147,7 @@ const RegisterLoginForm = ({ navigation, route }) => {
                 <Text style={{ color: 'red' }}>ยืนยันรหัสผ่านอีกครั้ง</Text>
               )}
               <View style={styles.formControl}>
-                {/* <GetIcon type="mci" name="form-textbox-password" /> */}
+                <GetIcon type="mci" name="form-textbox-password" />
                 <TextInput
                   style={styles.textInput}
                   placeholder="ยืนยันรหัสผ่านอีกครั้ง"
@@ -160,14 +162,14 @@ const RegisterLoginForm = ({ navigation, route }) => {
             <Button
               title="ลงทะเบียน"
               iconLeft
-              // icon={
-              //   <AntDesign
-              //     name="save"
-              //     color="white"
-              //     size={24}
-              //     style={{ marginHorizontal: 8 }}
-              //   />
-              // }
+              icon={
+                <AntDesign
+                  name="save"
+                  color="white"
+                  size={24}
+                  style={{ marginHorizontal: 8 }}
+                />
+              }
               buttonStyle={{
                 backgroundColor: '#ff2fe6',
                 marginTop: 20,

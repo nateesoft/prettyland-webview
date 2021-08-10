@@ -9,12 +9,12 @@ import {
   ScrollView,
 } from 'react-native';
 import { Button, Text } from 'react-native-elements';
-// import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import base64 from 'react-native-base64';
 import uuid from 'react-native-uuid';
 import DropDownPicker from 'react-native-dropdown-picker';
 
-// import { GetIcon } from '../../../components/GetIcons';
+import { GetIcon } from '../../../components/GetIcons';
 import { snapshotToArray, getDocument } from '../../../util';
 import firebase from '../../../util/firebase';
 import { AppConfig } from '../../../Constants';
@@ -130,7 +130,7 @@ const AddNewAdminForm = ({ navigation, route }) => {
             <View style={styles.viewCard}>
               <Text style={{ fontSize: 18 }}>ชื่อผู้ใช้งาน (name)</Text>
               <View style={styles.formControl}>
-                {/* <GetIcon type="ad" name="idcard" /> */}
+                <GetIcon type="ad" name="idcard" />
                 <TextInput
                   leftIcon={{ type: 'ant-design', name: 'idcard' }}
                   style={styles.textInput}
@@ -143,7 +143,7 @@ const AddNewAdminForm = ({ navigation, route }) => {
                 ข้อมูลชื่อผู้ใช้งาน (username) ในระบบ
               </Text>
               <View style={styles.formControl}>
-                {/* <GetIcon type="fa" name="address-book" /> */}
+                <GetIcon type="fa" name="address-book" />
                 <TextInput
                   leftIcon={{ type: 'font-awesome', name: 'address-book' }}
                   style={styles.textInput}
@@ -154,7 +154,7 @@ const AddNewAdminForm = ({ navigation, route }) => {
               </View>
               <Text style={{ fontSize: 18 }}>กำหนดรหัสผ่าน (password)</Text>
               <View style={styles.formControl}>
-                {/* <GetIcon type="fa" name="lock" /> */}
+                <GetIcon type="fa" name="lock" />
                 <TextInput
                   leftIcon={{ type: 'font-awesome', name: 'lock' }}
                   style={styles.inputForm}
@@ -168,7 +168,7 @@ const AddNewAdminForm = ({ navigation, route }) => {
                 ยืนยันรหัสผ่านใหม่ (re-password)
               </Text>
               <View style={styles.formControl}>
-                {/* <GetIcon type="fa" name="lock" /> */}
+                <GetIcon type="fa" name="lock" />
                 <TextInput
                   leftIcon={{ type: 'font-awesome', name: 'lock' }}
                   style={styles.inputForm}
@@ -201,14 +201,14 @@ const AddNewAdminForm = ({ navigation, route }) => {
               />
             </View>
             <Button
-              // icon={
-              //   <Icon
-              //     name="save"
-              //     size={20}
-              //     color="white"
-              //     style={{ marginRight: 5 }}
-              //   />
-              // }
+              icon={
+                <Icon
+                  name="save"
+                  size={20}
+                  color="white"
+                  style={{ marginRight: 5 }}
+                />
+              }
               iconLeft
               buttonStyle={styles.btnSave}
               title="เพิ่มข้อมูล"

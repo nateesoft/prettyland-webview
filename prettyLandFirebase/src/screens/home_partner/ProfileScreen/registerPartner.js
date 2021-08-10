@@ -9,7 +9,7 @@ import {
   ImageBackground,
   ScrollView,
 } from 'react-native';
-// import { AntDesign } from 'react-native-vector-icons';
+import { AntDesign } from 'react-native-vector-icons';
 import { Button } from 'react-native-elements';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { TextInputMask } from 'react-native-masked-text';
@@ -176,14 +176,14 @@ const RegisterPartnerForm = ({ navigation, route }) => {
               <Button
                 title="ถัดไป"
                 iconLeft
-                // icon={
-                //   <AntDesign
-                //     name="bank"
-                //     color="white"
-                //     size={24}
-                //     style={{ marginHorizontal: 15 }}
-                //   />
-                // }
+                icon={
+                  <AntDesign
+                    name="bank"
+                    color="white"
+                    size={24}
+                    style={{ marginHorizontal: 15 }}
+                  />
+                }
                 buttonStyle={{
                   backgroundColor: '#65A3E1',
                   marginTop: 20,

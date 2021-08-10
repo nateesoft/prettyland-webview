@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-// import {
-//   FontAwesome5,
-//   Foundation,
-//   MaterialCommunityIcons,
-//   MaterialIcons,
-// } from 'react-native-vector-icons';
+import {
+  FontAwesome5,
+  Foundation,
+  MaterialCommunityIcons,
+  MaterialIcons,
+} from 'react-native-vector-icons';
 
 /* all screen */
 import HomeNavigator from './HomeScreen/navigator';
@@ -83,9 +83,9 @@ const HomePartner = ({ navigation, route }) => {
         component={HomeNavigator}
         options={{
           title: 'โหมดงาน',
-          // tabBarIcon: ({ color, size }) => (
-          //   <FontAwesome5 name="kiss-wink-heart" color="white" size={size} />
-          // ),
+          tabBarIcon: ({ color, size }) => (
+            <FontAwesome5 name="kiss-wink-heart" color="white" size={size} />
+          ),
           headerShown: false,
         }}
         initialParams={{ userId, status }}
@@ -96,9 +96,9 @@ const HomePartner = ({ navigation, route }) => {
         options={{
           title: 'งานที่เสนอ',
           headerShown: false,
-          // tabBarIcon: ({ color, size }) => (
-          //   <MaterialIcons name="request-quote" color="white" size={size} />
-          // ),
+          tabBarIcon: ({ color, size }) => (
+            <MaterialIcons name="request-quote" color="white" size={size} />
+          ),
           tabBarBadge: reqCount ? reqCount : null,
           tabBarBadgeStyle: {
             backgroundColor: 'rgb(70, 240, 238)',
@@ -113,9 +113,9 @@ const HomePartner = ({ navigation, route }) => {
         options={{
           title: 'งานของฉัน',
           headerShown: false,
-          // tabBarIcon: ({ color, size }) => (
-          //   <Foundation name="social-foursquare" color="white" size={size} />
-          // ),
+          tabBarIcon: ({ color, size }) => (
+            <Foundation name="social-foursquare" color="white" size={size} />
+          ),
           tabBarBadge: myPostCount ? myPostCount : null,
           tabBarBadgeStyle: {
             backgroundColor: 'rgb(70, 240, 238)',
@@ -130,13 +130,13 @@ const HomePartner = ({ navigation, route }) => {
         options={{
           title: 'ข้อมูลส่วนตัว',
           headerShown: false,
-          // tabBarIcon: ({ color, size }) => (
-          //   <MaterialCommunityIcons
-          //     name="card-account-details"
-          //     color="white"
-          //     size={size}
-          //   />
-          // ),
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons
+              name="card-account-details"
+              color="white"
+              size={size}
+            />
+          ),
         }}
         initialParams={{ userId, status }}
       />
@@ -146,9 +146,9 @@ const HomePartner = ({ navigation, route }) => {
         options={{
           title: 'Logout',
           headerShown: false,
-          // tabBarIcon: ({ color, size }) => (
-          //   <MaterialCommunityIcons name="logout" color="white" size={size} />
-          // ),
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="logout" color="white" size={size} />
+          ),
         }}
         initialParams={{ userId, status }}
       />

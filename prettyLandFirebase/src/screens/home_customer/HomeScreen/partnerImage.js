@@ -10,7 +10,7 @@ import {
   Alert,
 } from 'react-native';
 import Video from 'react-native-video';
-// import { AntDesign } from 'react-native-vector-icons';
+import { AntDesign } from 'react-native-vector-icons';
 import { Button } from 'react-native-elements';
 import * as Progress from 'react-native-progress';
 import { AirbnbRating } from 'react-native-elements';
@@ -191,14 +191,14 @@ export default function PartnerImage({ navigation, route }) {
           {selectStatus !== AppConfig.PostsStatus.customerConfirm ? (
             <Button
               title="เลือกคนนี้"
-              // icon={
-              //   <AntDesign
-              //     name="checkcircleo"
-              //     size={20}
-              //     style={{ marginRight: 5 }}
-              //     color="white"
-              //   />
-              // }
+              icon={
+                <AntDesign
+                  name="checkcircleo"
+                  size={20}
+                  style={{ marginRight: 5 }}
+                  color="white"
+                />
+              }
               color="red"
               buttonStyle={{
                 backgroundColor: '#ff2fe6',

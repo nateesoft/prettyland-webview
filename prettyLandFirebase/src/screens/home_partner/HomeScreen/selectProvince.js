@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import { Button, Text } from 'react-native-elements';
 import DropDownPicker from 'react-native-dropdown-picker';
-// import { MaterialCommunityIcons } from 'react-native-vector-icons';
+import { MaterialCommunityIcons } from 'react-native-vector-icons';
 
 import { getCountryList, getProvinceName } from '../../../data/apis';
 import { AppConfig } from '../../../Constants';
@@ -64,14 +64,14 @@ const SelectProvince = props => {
           />
           <View style={styles.buttonFooter}>
             <Button
-              // icon={
-              //   <MaterialCommunityIcons
-              //     name="page-next-outline"
-              //     size={20}
-              //     color="white"
-              //     style={{ marginHorizontal: 8 }}
-              //   />
-              // }
+              icon={
+                <MaterialCommunityIcons
+                  name="page-next-outline"
+                  size={20}
+                  color="white"
+                  style={{ marginHorizontal: 8 }}
+                />
+              }
               iconLeft
               buttonStyle={{
                 backgroundColor: '#ff2fe6',

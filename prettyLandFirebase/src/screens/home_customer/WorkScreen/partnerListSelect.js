@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import { Text } from 'react-native';
 import { Button } from 'react-native-elements';
-// import { MaterialIcons } from 'react-native-vector-icons';
+import { MaterialIcons } from 'react-native-vector-icons';
 
 import firebase from '../../../util/firebase';
 import { snapshotToArray, getDocument } from '../../../util';
@@ -162,14 +162,14 @@ const PartnerListSelect = ({ navigation, route }) => {
           <View style={{ alignItems: 'center' }}>
             <Button
               title="เข้าหน้ารับชำระ"
-              // icon={
-              //   <MaterialIcons
-              //     name="attach-money"
-              //     size={20}
-              //     color="white"
-              //     style={{ marginRight: 10 }}
-              //   />
-              // }
+              icon={
+                <MaterialIcons
+                  name="attach-money"
+                  size={20}
+                  color="white"
+                  style={{ marginRight: 10 }}
+                />
+              }
               onPress={() =>
                 navigation.navigate('Payment-Form', { item: postItem })
               }

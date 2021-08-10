@@ -7,7 +7,7 @@ import {
   ImageBackground,
 } from 'react-native';
 import { Button, Text } from 'react-native-elements';
-// import { Ionicons } from 'react-native-vector-icons';
+import { Ionicons } from 'react-native-vector-icons';
 
 import { AppConfig } from '../../../Constants';
 import firebase from '../../../util/firebase';
@@ -101,14 +101,14 @@ const AdminDetailScreen = ({ navigation, route }) => {
         </View>
         <View style={{ alignItems: 'center' }}>
           <Button
-            // icon={
-            //   <Ionicons
-            //     name="trash-bin-outline"
-            //     size={24}
-            //     color="white"
-            //     style={{ marginRight: 5 }}
-            //   />
-            // }
+            icon={
+              <Ionicons
+                name="trash-bin-outline"
+                size={24}
+                color="white"
+                style={{ marginRight: 5 }}
+              />
+            }
             iconLeft
             buttonStyle={{
               margin: 5,

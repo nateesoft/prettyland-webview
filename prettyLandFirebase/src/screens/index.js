@@ -10,7 +10,7 @@ import {
   TouchableNativeFeedback,
 } from 'react-native';
 import { Button } from 'react-native-elements/dist/buttons/Button';
-// import Icon from 'react-native-vector-icons/AntDesign';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 import { checkToSendAllBroadcastToAllUser } from '../apis';
 import firebase from '../util/firebase';
@@ -147,14 +147,14 @@ const LoginScreen = ({ navigation, route }) => {
         )} */}
         <Text style={styles.textOr}>------ OR ------</Text>
         <Button
-          // icon={
-          //   <Icon
-          //     name="login"
-          //     size={20}
-          //     style={{ marginLeft: 10 }}
-          //     color="white"
-          //   />
-          // }
+          icon={
+            <AntDesign
+              name="login"
+              size={20}
+              style={{ marginLeft: 10 }}
+              color="white"
+            />
+          }
           iconRight
           title="LOGIN"
           titleStyle={{
@@ -264,7 +264,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     flexWrap: 'wrap',
     fontSize: 12,
-    color: 'gray',
     position: 'absolute',
     bottom: 135,
     color: 'red',
@@ -274,7 +273,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     flexWrap: 'wrap',
     fontSize: 12,
-    color: 'gray',
     position: 'absolute',
     bottom: 85,
     color: 'black',
@@ -284,7 +282,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     flexWrap: 'wrap',
     fontSize: 12,
-    color: 'gray',
     position: 'absolute',
     bottom: 60,
     color: 'green',

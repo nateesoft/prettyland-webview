@@ -40,6 +40,22 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = prettyLandFirebase/main.m; sourceTree = "<group>"; };
 		1AE2067D6738AD2D27E5A337 /* Pods-prettyLandFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prettyLandFirebase.debug.xcconfig"; path = "Target Support Files/Pods-prettyLandFirebase/Pods-prettyLandFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		39CAB833900D8F5FBBE1A80F /* Pods-prettyLandFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prettyLandFirebase.release.xcconfig"; path = "Target Support Files/Pods-prettyLandFirebase/Pods-prettyLandFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		4A625A9B26C29558003ECE58 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Foundation.ttf; path = ../android/app/src/main/assets/fonts/Foundation.ttf; sourceTree = "<group>"; };
+		4A625A9C26C29558003ECE58 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SimpleLineIcons.ttf; path = ../android/app/src/main/assets/fonts/SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		4A625A9D26C29558003ECE58 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Brands.ttf; path = ../android/app/src/main/assets/fonts/FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		4A625A9E26C29558003ECE58 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fontisto.ttf; path = ../android/app/src/main/assets/fonts/Fontisto.ttf; sourceTree = "<group>"; };
+		4A625A9F26C29558003ECE58 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = ../android/app/src/main/assets/fonts/Feather.ttf; sourceTree = "<group>"; };
+		4A625AA026C29559003ECE58 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = ../android/app/src/main/assets/fonts/EvilIcons.ttf; sourceTree = "<group>"; };
+		4A625AA126C29559003ECE58 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = ../android/app/src/main/assets/fonts/MaterialIcons.ttf; sourceTree = "<group>"; };
+		4A625AA226C29559003ECE58 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Octicons.ttf; path = ../android/app/src/main/assets/fonts/Octicons.ttf; sourceTree = "<group>"; };
+		4A625AA326C29559003ECE58 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = ../android/app/src/main/assets/fonts/FontAwesome.ttf; sourceTree = "<group>"; };
+		4A625AA426C29559003ECE58 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = ../android/app/src/main/assets/fonts/Ionicons.ttf; sourceTree = "<group>"; };
+		4A625AA526C29559003ECE58 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AntDesign.ttf; path = ../android/app/src/main/assets/fonts/AntDesign.ttf; sourceTree = "<group>"; };
+		4A625AA626C29559003ECE58 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Zocial.ttf; path = ../android/app/src/main/assets/fonts/Zocial.ttf; sourceTree = "<group>"; };
+		4A625AA726C29559003ECE58 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = ../android/app/src/main/assets/fonts/FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		4A625AA826C29559003ECE58 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = ../android/app/src/main/assets/fonts/MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		4A625AA926C29559003ECE58 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Regular.ttf; path = ../android/app/src/main/assets/fonts/FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		4A625AAA26C29559003ECE58 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = ../android/app/src/main/assets/fonts/Entypo.ttf; sourceTree = "<group>"; };
 		4ACC269B26C185E900FD3B53 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4AE2C10C26BFA3C500286FE7 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		4AFA006C26BFCFCA002D4820 /* prettyLandFirebase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = prettyLandFirebase.entitlements; path = prettyLandFirebase/prettyLandFirebase.entitlements; sourceTree = "<group>"; };
@@ -113,12 +129,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4A625A9A26C2950C003ECE58 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4A625AA526C29559003ECE58 /* AntDesign.ttf */,
+				4A625AAA26C29559003ECE58 /* Entypo.ttf */,
+				4A625AA026C29559003ECE58 /* EvilIcons.ttf */,
+				4A625A9F26C29558003ECE58 /* Feather.ttf */,
+				4A625AA326C29559003ECE58 /* FontAwesome.ttf */,
+				4A625A9D26C29558003ECE58 /* FontAwesome5_Brands.ttf */,
+				4A625AA926C29559003ECE58 /* FontAwesome5_Regular.ttf */,
+				4A625AA726C29559003ECE58 /* FontAwesome5_Solid.ttf */,
+				4A625A9E26C29558003ECE58 /* Fontisto.ttf */,
+				4A625A9B26C29558003ECE58 /* Foundation.ttf */,
+				4A625AA426C29559003ECE58 /* Ionicons.ttf */,
+				4A625AA826C29559003ECE58 /* MaterialCommunityIcons.ttf */,
+				4A625AA126C29559003ECE58 /* MaterialIcons.ttf */,
+				4A625AA226C29559003ECE58 /* Octicons.ttf */,
+				4A625A9C26C29558003ECE58 /* SimpleLineIcons.ttf */,
+				4A625AA626C29559003ECE58 /* Zocial.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		4CDBE9355264464D9ED834C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -131,6 +169,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				4A625A9A26C2950C003ECE58 /* Fonts */,
 				4ACC269B26C185E900FD3B53 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* prettyLandFirebase */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,

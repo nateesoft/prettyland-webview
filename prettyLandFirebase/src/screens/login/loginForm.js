@@ -11,7 +11,7 @@ import {
   ScrollView,
 } from 'react-native';
 import { Button } from 'react-native-elements/dist/buttons/Button';
-// import Icon from 'react-native-vector-icons/AntDesign';
+import Icon from 'react-native-vector-icons/AntDesign';
 import { loginApp } from '../../apis';
 
 import bg from '../../../assets/login.png';
@@ -91,7 +91,7 @@ const LoginForm = ({ navigation, route }) => {
                   height: 40,
                   borderRadius: 10,
                 }}>
-                {/* <Icon name="user" color="#00716F" size={20} /> */}
+                <Icon name="user" color="#00716F" size={20} />
                 <TextInput
                   style={styles.textInput}
                   placeholder="ข้อมูลผู้ใช้งาน (Username)"
@@ -114,7 +114,7 @@ const LoginForm = ({ navigation, route }) => {
                   height: 40,
                   borderRadius: 10,
                 }}>
-                {/* <Icon name="lock" color="#00716F" size={20} /> */}
+                <Icon name="lock" color="#00716F" size={20} />
                 <TextInput
                   secureTextEntry={true}
                   style={styles.textInput}

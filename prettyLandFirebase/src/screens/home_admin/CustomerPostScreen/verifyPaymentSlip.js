@@ -9,7 +9,7 @@ import {
   SafeAreaView,
 } from 'react-native';
 import { Button, Text } from 'react-native-elements';
-// import { AntDesign } from 'react-native-vector-icons';
+import { AntDesign } from 'react-native-vector-icons';
 
 import { adminSaveConfirmPayment } from '../../../apis';
 import { AppConfig } from '../../../Constants';
@@ -170,14 +170,14 @@ const VerifyPaymentSlip = ({ navigation, route }) => {
             </ScrollView>
           </View>
           <Button
-            // icon={
-            //   <AntDesign
-            //     name="checksquareo"
-            //     size={20}
-            //     color="white"
-            //     style={{ marginRight: 5 }}
-            //   />
-            // }
+            icon={
+              <AntDesign
+                name="checksquareo"
+                size={20}
+                color="white"
+                style={{ marginRight: 5 }}
+              />
+            }
             buttonStyle={styles.buttonConfirm}
             title="ยืนยันข้อมูลการโอนเงิน"
             onPress={() => saveConfirmPayment()}

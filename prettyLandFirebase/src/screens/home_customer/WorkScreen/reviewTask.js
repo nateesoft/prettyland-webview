@@ -9,7 +9,7 @@ import {
   Text,
 } from 'react-native';
 import { Button } from 'react-native-elements';
-// import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import StarRating from 'react-native-star-rating';
 
 import { updatePosts } from '../../../apis';
@@ -187,14 +187,14 @@ const ReviewTaskScreen = props => {
           )}
           {postDetail.status === AppConfig.PostsStatus.customerNewPostDone && (
             <Button
-              // icon={
-              //   <Icon
-              //     name="close"
-              //     size={15}
-              //     color="white"
-              //     style={{ marginRight: 5 }}
-              //   />
-              // }
+              icon={
+                <Icon
+                  name="close"
+                  size={15}
+                  color="white"
+                  style={{ marginRight: 5 }}
+                />
+              }
               iconLeft
               buttonStyle={{
                 margin: 5,
@@ -216,14 +216,14 @@ const ReviewTaskScreen = props => {
               />
               <Text>ให้ {rate} คะแนน</Text>
               <Button
-                // icon={
-                //   <Icon
-                //     name="save"
-                //     size={24}
-                //     color="white"
-                //     style={{ marginRight: 10 }}
-                //   />
-                // }
+                icon={
+                  <Icon
+                    name="save"
+                    size={24}
+                    color="white"
+                    style={{ marginRight: 10 }}
+                  />
+                }
                 title="บันทึกปิดงาน"
                 buttonStyle={{
                   marginVertical: 10,

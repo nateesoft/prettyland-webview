@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-// import {
-//   MaterialCommunityIcons,
-//   MaterialIcons,
-// } from 'react-native-vector-icons';
+import {
+  MaterialCommunityIcons,
+  MaterialIcons,
+} from 'react-native-vector-icons';
 
 /* all screen */
 import HomeScreen from './HomeScreen/navigator';
@@ -55,9 +55,9 @@ const HomeCustomer = ({ navigation, route }) => {
         component={HomeScreen}
         options={{
           title: 'หน้าหลัก',
-          // tabBarIcon: ({ color, size }) => (
-          //   <MaterialCommunityIcons name="home" color="white" size={size} />
-          // ),
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="home" color="white" size={size} />
+          ),
           headerShown: false,
           color: 'white',
         }}
@@ -68,9 +68,9 @@ const HomeCustomer = ({ navigation, route }) => {
         component={WorkScreen}
         options={{
           tabBarLabel: 'รายการโพสท์',
-          // tabBarIcon: ({ color, size }) => (
-          //   <MaterialCommunityIcons name="post" color="white" size={size} />
-          // ),
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="post" color="white" size={size} />
+          ),
           headerShown: false,
           tabBarBadge: postsChangeCount ? postsChangeCount : null,
           tabBarBadgeStyle: {
@@ -86,9 +86,9 @@ const HomeCustomer = ({ navigation, route }) => {
         options={{
           tabBarLabel: 'ติดต่อ Admin',
           headerShown: false,
-          // tabBarIcon: ({ color, size }) => (
-          //   <MaterialIcons name="contact-phone" color="white" size={size} />
-          // ),
+          tabBarIcon: ({ color, size }) => (
+            <MaterialIcons name="contact-phone" color="white" size={size} />
+          ),
         }}
         initialParams={{ userId, status }}
       />
@@ -98,9 +98,9 @@ const HomeCustomer = ({ navigation, route }) => {
         options={{
           tabBarLabel: 'Logout',
           headerShown: false,
-          // tabBarIcon: ({ color, size }) => (
-          //   <MaterialCommunityIcons name="logout" color="white" size={size} />
-          // ),
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="logout" color="white" size={size} />
+          ),
         }}
         initialParams={{ userId, status }}
       />

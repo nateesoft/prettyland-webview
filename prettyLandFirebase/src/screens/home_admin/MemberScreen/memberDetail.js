@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 // import Video from 'react-native-video';
 import { Button, Text } from 'react-native-elements';
-// import { Ionicons, Feather, AntDesign } from 'react-native-vector-icons';
+import { Ionicons, Feather, AntDesign } from 'react-native-vector-icons';
 import Moment from 'moment';
 // import { ActivityIndicator } from 'react-native-paper';
 
@@ -256,14 +256,14 @@ const MemberDetailScreen = ({ navigation, route }) => {
         <View style={{ alignItems: 'center' }}>
           {item.status === AppConfig.MemberStatus.newRegister && (
             <Button
-              // icon={
-              //   <Feather
-              //     name="user-check"
-              //     size={24}
-              //     color="white"
-              //     style={{ marginRight: 5 }}
-              //   />
-              // }
+              icon={
+                <Feather
+                  name="user-check"
+                  size={24}
+                  color="white"
+                  style={{ marginRight: 5 }}
+                />
+              }
               iconLeft
               buttonStyle={{
                 margin: 5,
@@ -279,14 +279,14 @@ const MemberDetailScreen = ({ navigation, route }) => {
             item.status !== AppConfig.MemberStatus.newRegister &&
             item.status !== AppConfig.MemberStatus.suspend && (
               <Button
-                // icon={
-                //   <AntDesign
-                //     name="deleteuser"
-                //     size={24}
-                //     color="white"
-                //     style={{ marginRight: 5 }}
-                //   />
-                // }
+                icon={
+                  <AntDesign
+                    name="deleteuser"
+                    size={24}
+                    color="white"
+                    style={{ marginRight: 5 }}
+                  />
+                }
                 iconLeft
                 buttonStyle={{
                   margin: 5,
@@ -300,14 +300,14 @@ const MemberDetailScreen = ({ navigation, route }) => {
             )}
           {item.status === AppConfig.MemberStatus.suspend && (
             <Button
-              // icon={
-              //   <Ionicons
-              //     name="shield-checkmark-outline"
-              //     size={15}
-              //     color="white"
-              //     style={{ marginRight: 5 }}
-              //   />
-              // }
+              icon={
+                <Ionicons
+                  name="shield-checkmark-outline"
+                  size={15}
+                  color="white"
+                  style={{ marginRight: 5 }}
+                />
+              }
               iconLeft
               buttonStyle={{
                 margin: 5,
@@ -320,14 +320,14 @@ const MemberDetailScreen = ({ navigation, route }) => {
             />
           )}
           <Button
-            // icon={
-            //   <Ionicons
-            //     name="trash-bin-outline"
-            //     size={24}
-            //     color="white"
-            //     style={{ marginRight: 5 }}
-            //   />
-            // }
+            icon={
+              <Ionicons
+                name="trash-bin-outline"
+                size={24}
+                color="white"
+                style={{ marginRight: 5 }}
+              />
+            }
             iconLeft
             buttonStyle={{
               margin: 5,
