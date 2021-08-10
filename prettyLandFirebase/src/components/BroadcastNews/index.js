@@ -12,7 +12,7 @@ import { AntDesign } from 'react-native-vector-icons';
 // import * as WebBrowser from 'expo-web-browser';
 // import * as Linking from 'expo-linking';
 
-import firebase from '../../../firebaseSetup';
+import firebase from '../../util/firebase';
 import { getDocument } from '../../util';
 
 // onPress={() => Linking.openURL("https://pretty-land.web.app/")

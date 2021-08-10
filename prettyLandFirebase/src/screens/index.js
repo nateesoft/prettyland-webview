@@ -10,9 +10,10 @@ import {
   TouchableNativeFeedback,
 } from 'react-native';
 import { Button } from 'react-native-elements/dist/buttons/Button';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 import { checkToSendAllBroadcastToAllUser } from '../apis';
-import firebase from '../../firebaseSetup';
+import firebase from '../util/firebase';
 import { getDocument } from '../util';
 import bg from '../../assets/login.png';
 import lineLogo from '../../assets/icons/LINE_APP.png';
@@ -146,6 +147,14 @@ const LoginScreen = ({ navigation, route }) => {
         )} */}
         <Text style={styles.textOr}>------ OR ------</Text>
         <Button
+          icon={
+            <Icon
+              name="login"
+              size={20}
+              style={{ marginLeft: 10 }}
+              color="white"
+            />
+          }
           iconRight
           title="LOGIN"
           titleStyle={{

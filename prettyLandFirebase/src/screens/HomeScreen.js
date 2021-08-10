@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { View, Text, Button, StyleSheet, LogBox } from 'react-native';
-import firebase from '../../firebaseSetup';
+import firebase from '../util/firebase';
 
 LogBox.ignoreLogs(['Setting a timer for a long period of time']);
 

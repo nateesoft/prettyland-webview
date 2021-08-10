@@ -1,7 +1,7 @@
 import uuid from 'react-native-uuid';
 import Moment from 'moment';
 
-import firebase from '../../firebaseSetup';
+import firebase from '../util/firebase';
 import { getDocument } from '../util';
 import { getBankName } from '../data/apis';
 import { AppConfig } from '../Constants';
