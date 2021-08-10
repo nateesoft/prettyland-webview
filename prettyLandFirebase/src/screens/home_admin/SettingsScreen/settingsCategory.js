@@ -23,14 +23,14 @@ const SettingsCategory = ({ navigation, route }) => {
         <View style={[styles.cardDetail, { justifyContent: 'center' }]}>
           {role === 'superadmin' && (
             <Button
-              icon={
-                <FontAwesome
-                  name="user-secret"
-                  size={20}
-                  color="white"
-                  style={{ marginRight: 5 }}
-                />
-              }
+              // icon={
+              //   <FontAwesome
+              //     name="user-secret"
+              //     size={20}
+              //     color="white"
+              //     style={{ marginRight: 5 }}
+              //   />
+              // }
               titleStyle={{ fontSize: 22 }}
               iconLeft
               buttonStyle={styles.btnNewAdmin}
@@ -40,14 +40,14 @@ const SettingsCategory = ({ navigation, route }) => {
           )}
           {role === 'superadmin' && (
             <Button
-              icon={
-                <FontAwesome
-                  name="user-secret"
-                  size={20}
-                  color="white"
-                  style={{ marginRight: 5 }}
-                />
-              }
+              // icon={
+              //   <FontAwesome
+              //     name="user-secret"
+              //     size={20}
+              //     color="white"
+              //     style={{ marginRight: 5 }}
+              //   />
+              // }
               titleStyle={{ fontSize: 22 }}
               iconLeft
               buttonStyle={styles.btnNewAdmin}
@@ -57,14 +57,14 @@ const SettingsCategory = ({ navigation, route }) => {
           )}
           {role === 'superadmin' && (
             <Button
-              icon={
-                <MaterialIcons
-                  name="app-settings-alt"
-                  size={20}
-                  color="white"
-                  style={{ marginRight: 5 }}
-                />
-              }
+              // icon={
+              //   <MaterialIcons
+              //     name="app-settings-alt"
+              //     size={20}
+              //     color="white"
+              //     style={{ marginRight: 5 }}
+              //   />
+              // }
               titleStyle={{ fontSize: 22 }}
               iconLeft
               buttonStyle={styles.btnPostConfig}
@@ -74,14 +74,14 @@ const SettingsCategory = ({ navigation, route }) => {
           )}
           {role === 'superadmin' && (
             <Button
-              icon={
-                <FontAwesome
-                  name="user-secret"
-                  size={20}
-                  color="white"
-                  style={{ marginRight: 5 }}
-                />
-              }
+              // icon={
+              //   <FontAwesome
+              //     name="user-secret"
+              //     size={20}
+              //     color="white"
+              //     style={{ marginRight: 5 }}
+              //   />
+              // }
               titleStyle={{ fontSize: 22 }}
               iconLeft
               buttonStyle={styles.btnListAdmin}
@@ -90,14 +90,14 @@ const SettingsCategory = ({ navigation, route }) => {
             />
           )}
           <Button
-            icon={
-              <Ionicons
-                name="newspaper-sharp"
-                size={24}
-                color="white"
-                style={{ marginRight: 5 }}
-              />
-            }
+            // icon={
+            //   <Ionicons
+            //     name="newspaper-sharp"
+            //     size={24}
+            //     color="white"
+            //     style={{ marginRight: 5 }}
+            //   />
+            // }
             titleStyle={{ fontSize: 22 }}
             iconLeft
             buttonStyle={styles.btnMemberReport}
@@ -105,14 +105,14 @@ const SettingsCategory = ({ navigation, route }) => {
             onPress={() => navigation.navigate('Member-Register-Lists')}
           />
           <Button
-            icon={
-              <Ionicons
-                name="newspaper-sharp"
-                size={24}
-                color="white"
-                style={{ marginRight: 5 }}
-              />
-            }
+            // icon={
+            //   <Ionicons
+            //     name="newspaper-sharp"
+            //     size={24}
+            //     color="white"
+            //     style={{ marginRight: 5 }}
+            //   />
+            // }
             titleStyle={{ fontSize: 22 }}
             iconLeft
             buttonStyle={styles.btnPartnerReport}
@@ -120,14 +120,14 @@ const SettingsCategory = ({ navigation, route }) => {
             onPress={() => navigation.navigate('Partner-Register-Lists')}
           />
           <Button
-            icon={
-              <MaterialCommunityIcons
-                name="email-send"
-                size={24}
-                color="white"
-                style={{ marginLeft: 10 }}
-              />
-            }
+            // icon={
+            //   <MaterialCommunityIcons
+            //     name="email-send"
+            //     size={24}
+            //     color="white"
+            //     style={{ marginLeft: 10 }}
+            //   />
+            // }
             titleStyle={{ fontSize: 22 }}
             iconRight
             buttonStyle={styles.btnBroadcast}

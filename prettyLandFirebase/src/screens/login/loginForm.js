@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import { Button } from 'react-native-elements/dist/buttons/Button';
 import Icon from 'react-native-vector-icons/AntDesign';
+import { loginApp } from '../../apis';
 
 import bg from '../../../assets/login.png';
 import { AppConfig } from '../../Constants';
@@ -22,18 +23,40 @@ const LoginForm = ({ navigation, route }) => {
   const [password, setPassword] = useState('');
 
   const signIn = () => {
-    console.log('signIn');
-  };
-
-  const validateLogin = () => {
-    if (username && password) {
-      signIn({ username, password, screen: 'admin' });
-    } else {
-      Alert.alert(
-        'แจ้งเตือน',
-        'กรุณาระบุข้อมูลผู้ใช้งาน และรหัสผ่านให้ครบถ้วน !!!',
-      );
-    }
+    loginApp(username, password).then(res => {
+      const { valid, member } = res;
+      if (valid) {
+        if (
+          member.memberType === 'superadmin' ||
+          member.memberType === 'admin'
+        ) {
+          console.log('go to admin screen');
+          navigation.navigate('AdminHome', {
+            userId: member.id,
+            screen: 'admin',
+          });
+        } else if (member.memberType === 'partner') {
+          console.log('go to partner screen');
+          navigation.navigate('PartnerHome', {
+            userId: member.id,
+            screen: 'partner',
+          });
+        } else if (member.memberType === 'customer') {
+          console.log('go to customer screen');
+          navigation.navigate('CustomerHome', {
+            userId: member.id,
+            screen: 'customer',
+          });
+        } else {
+          navigation.navigate('Notification');
+        }
+      } else {
+        Alert.alert(
+          'แจ้งเตือน',
+          'กรุณาระบุข้อมูลผู้ใช้งาน และรหัสผ่านให้ครบถ้วน !!!',
+        );
+      }
+    });
   };
 
   return (
@@ -112,7 +135,7 @@ const LoginForm = ({ navigation, route }) => {
                 height: 45,
                 borderWidth: 0.5,
               }}
-              onPress={() => validateLogin()}
+              onPress={() => signIn()}
             />
             <Button
               title="ลงทะเบียน (Register)"

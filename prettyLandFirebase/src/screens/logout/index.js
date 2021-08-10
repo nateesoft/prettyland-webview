@@ -74,7 +74,7 @@ const LogoutScreen = ({ navigation, route }) => {
             borderRadius: 5,
             paddingHorizontal: 15,
           }}
-          icon={<MaterialIcons name="logout" size={24} color="white" />}
+          // icon={<MaterialIcons name="logout" size={24} color="white" />}
         />
       </View>
     </ImageBackground>

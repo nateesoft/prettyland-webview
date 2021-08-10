@@ -6,6 +6,7 @@ import {
   Feather,
   MaterialCommunityIcons,
 } from 'react-native-vector-icons';
+// import { View, Text } from 'react-native';
 
 /* all screen */
 import CustomerPostNavigator from './CustomerPostScreen/navigator';
@@ -37,23 +38,31 @@ const HomeAdmin = ({ navigation, route }) => {
     return () => ref.off('value', listener);
   }, []);
 
+  // const HomeScreen = () => (
+  //   <View>
+  //     <Text>HomeScreen: {userId}</Text>
+  //   </View>
+  // );
+  // const SettingsScreen = () => (
+  //   <View>
+  //     <Text>SettingsScreen: {screen}</Text>
+  //   </View>
+  // );
+
+  // return (
+  //   <Tab.Navigator>
+  //     <Tab.Screen name="Home" component={HomeScreen} />
+  //     <Tab.Screen name="Settings" component={SettingsScreen} />
+  //   </Tab.Navigator>
+  // );
+
   return (
-    <Tab.Navigator
-      tabBarOptions={{
-        activeTintColor: 'purple',
-        inactiveTintColor: 'white',
-        style: {
-          backgroundColor: '#ff2fe6',
-        },
-      }}>
+    <Tab.Navigator>
       <Tab.Screen
         name="a-Task"
         component={CustomerPostNavigator}
         options={{
           title: 'โพสท์ทั้งหมด',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name="fact-check" color="white" size={size} />
-          ),
         }}
         initialParams={{ userId }}
       />
@@ -62,9 +71,6 @@ const HomeAdmin = ({ navigation, route }) => {
         component={MemberNavigator}
         options={{
           title: 'สมาชิกในระบบ',
-          tabBarIcon: ({ color, size }) => (
-            <Feather name="users" color="white" size={size} />
-          ),
           tabBarBadge: memberCount ? memberCount : null,
           tabBarBadgeStyle: {
             backgroundColor: 'rgb(70, 240, 238)',
@@ -78,13 +84,6 @@ const HomeAdmin = ({ navigation, route }) => {
         component={ProfileNavigator}
         options={{
           title: 'ข้อมูลส่วนตัว',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons
-              name="card-account-details"
-              color="white"
-              size={size}
-            />
-          ),
         }}
         initialParams={{ userId }}
       />
@@ -93,9 +92,6 @@ const HomeAdmin = ({ navigation, route }) => {
         component={SettingsNavigator}
         options={{
           title: 'ตั้งค่าระบบ',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="md-settings-outline" color="white" size={size} />
-          ),
         }}
         initialParams={{ userId, role: screen }}
       />
@@ -104,9 +100,6 @@ const HomeAdmin = ({ navigation, route }) => {
         component={LogoutScreen}
         options={{
           title: 'Logout',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="logout" color="white" size={size} />
-          ),
         }}
         initialParams={{ userId }}
       />

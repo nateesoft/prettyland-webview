@@ -21,7 +21,7 @@ import { AppConfig } from '../../Constants';
 
 const Tab = createBottomTabNavigator();
 
-const PartnerNavigator = ({ navigation, route }) => {
+const HomePartner = ({ navigation, route }) => {
   const { userId, status } = route.params;
   const [reqCount, setReqCount] = useState(0);
   const [myPostCount, setMyPostCount] = useState(0);
@@ -158,4 +158,4 @@ const PartnerNavigator = ({ navigation, route }) => {
   );
 };
 
-export default PartnerNavigator;
+export default HomePartner;

@@ -18,7 +18,7 @@ import { AppConfig } from '../../Constants';
 
 const Tab = createBottomTabNavigator();
 
-const CustomerNavigator = ({ navigation, route }) => {
+const HomeCustomer = ({ navigation, route }) => {
   const { userId, status } = route.params;
   const [postsChangeCount, setPostsChangeCount] = useState(0);
 
@@ -111,4 +111,4 @@ const CustomerNavigator = ({ navigation, route }) => {
   );
 };
 
-export default CustomerNavigator;
+export default HomeCustomer;

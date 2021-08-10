@@ -1,10 +1,40 @@
 import uuid from 'react-native-uuid';
+import { Alert } from 'react-native';
 import Moment from 'moment';
+import base64 from 'react-native-base64';
 
 import firebase from '../util/firebase';
 import { getDocument } from '../util';
 import { getBankName } from '../data/apis';
 import { AppConfig } from '../Constants';
+
+export const loginApp = (username, password) => {
+  return new Promise((resolve, reject) => {
+    firebase
+      .database()
+      .ref(getDocument('demo/members'))
+      .once('value', snapshot => {
+        const members = snapshot.val();
+        let isValid = false;
+        let memberObj = {};
+        for (let key in members) {
+          const member = members[key];
+          if (
+            member.username === username &&
+            base64.decode(member.password) === password
+          ) {
+            isValid = true;
+            memberObj = member;
+          }
+        }
+        resolve({ valid: isValid, member: memberObj });
+      })
+      .catch(err => {
+        Alert.alert(`${err}`);
+        resolve(false);
+      });
+  });
+};
 
 export const saveNewMember = (memberId, memberData) => {
   return new Promise((resolve, reject) => {
