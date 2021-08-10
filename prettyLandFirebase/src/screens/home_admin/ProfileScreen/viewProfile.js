@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, View, ImageBackground, Alert } from 'react-native';
+import {
+  StyleSheet,
+  View,
+  ImageBackground,
+  Alert,
+  SafeAreaView,
+} from 'react-native';
 import { Button, Text, Input } from 'react-native-elements';
 // import { FontAwesome } from 'react-native-vector-icons';
 import base64 from 'react-native-base64';
@@ -64,64 +70,66 @@ const ViewProfileScreen = ({ navigation, route }) => {
       source={AppConfig.bgImage}
       style={styles.imageBg}
       resizeMode="contain">
-      <Text style={styles.textTopic}>เปลี่ยนรหัสผ่าน</Text>
-      <View style={styles.cardDetail}>
-        <View style={styles.viewCard}>
-          <Text style={{ fontSize: 18, color: 'blue' }}>ชื่อผู้ใช้งาน</Text>
-          <Input
-            name="username"
-            placeholder="ชื่อผู้ใช้งาน"
-            leftIcon={{ type: 'font-awesome', name: 'user' }}
-            style={[styles.inputForm, { fontSize: 22, fontWeight: 'bold' }]}
-            value={username}
-            disabled
-          />
-          <Text style={{ fontSize: 18 }}>ข้อมูลรหัสผ่านเดิมที่ใช้งาน</Text>
-          <Input
-            name="password"
-            placeholder="รหัสผ่านเดิม"
-            leftIcon={{ type: 'font-awesome', name: 'address-book' }}
-            style={styles.inputForm}
-            onChangeText={value => setPassword(value)}
-            value={password}
-            secureTextEntry={true}
-          />
-          <Text style={{ fontSize: 18 }}>ข้อมูลรหัสผ่านใหม่</Text>
-          <Input
-            name="comment"
-            placeholder="รหัสผ่านใหม่"
-            leftIcon={{ type: 'font-awesome', name: 'lock' }}
-            style={styles.inputForm}
-            onChangeText={value => setNewPassword(value)}
-            value={newPassword}
-            secureTextEntry={true}
-          />
-          <Text style={{ fontSize: 18 }}>ข้อมูลยืนยันรหัสผ่านใหม่</Text>
-          <Input
-            name="phone"
-            placeholder="ยืนยันรหัสผ่านใหม่"
-            leftIcon={{ type: 'font-awesome', name: 'lock' }}
-            style={styles.inputForm}
-            onChangeText={value => setReNewPassword(value)}
-            value={reNewPassword}
-            secureTextEntry={true}
+      <SafeAreaView style={{ height: '93%' }}>
+        <Text style={styles.textTopic}>เปลี่ยนรหัสผ่าน</Text>
+        <View style={styles.cardDetail}>
+          <View style={styles.viewCard}>
+            <Text style={{ fontSize: 18, color: 'blue' }}>ชื่อผู้ใช้งาน</Text>
+            <Input
+              name="username"
+              placeholder="ชื่อผู้ใช้งาน"
+              leftIcon={{ type: 'font-awesome', name: 'user' }}
+              style={[styles.inputForm, { fontSize: 22, fontWeight: 'bold' }]}
+              value={username}
+              disabled
+            />
+            <Text style={{ fontSize: 18 }}>ข้อมูลรหัสผ่านเดิมที่ใช้งาน</Text>
+            <Input
+              name="password"
+              placeholder="รหัสผ่านเดิม"
+              leftIcon={{ type: 'font-awesome', name: 'address-book' }}
+              style={styles.inputForm}
+              onChangeText={value => setPassword(value)}
+              value={password}
+              secureTextEntry={true}
+            />
+            <Text style={{ fontSize: 18 }}>ข้อมูลรหัสผ่านใหม่</Text>
+            <Input
+              name="comment"
+              placeholder="รหัสผ่านใหม่"
+              leftIcon={{ type: 'font-awesome', name: 'lock' }}
+              style={styles.inputForm}
+              onChangeText={value => setNewPassword(value)}
+              value={newPassword}
+              secureTextEntry={true}
+            />
+            <Text style={{ fontSize: 18 }}>ข้อมูลยืนยันรหัสผ่านใหม่</Text>
+            <Input
+              name="phone"
+              placeholder="ยืนยันรหัสผ่านใหม่"
+              leftIcon={{ type: 'font-awesome', name: 'lock' }}
+              style={styles.inputForm}
+              onChangeText={value => setReNewPassword(value)}
+              value={reNewPassword}
+              secureTextEntry={true}
+            />
+          </View>
+          <Button
+            // icon={
+            //   <FontAwesome
+            //     name="save"
+            //     size={20}
+            //     color="white"
+            //     style={{ marginRight: 5 }}
+            //   />
+            // }
+            iconLeft
+            buttonStyle={styles.btnSave}
+            title="บันทึกข้อมูล"
+            onPress={() => handleSaveChangePassword()}
           />
         </View>
-        <Button
-          // icon={
-          //   <FontAwesome
-          //     name="save"
-          //     size={20}
-          //     color="white"
-          //     style={{ marginRight: 5 }}
-          //   />
-          // }
-          iconLeft
-          buttonStyle={styles.btnSave}
-          title="บันทึกข้อมูล"
-          onPress={() => handleSaveChangePassword()}
-        />
-      </View>
+      </SafeAreaView>
     </ImageBackground>
   );
 };

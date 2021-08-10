@@ -10,7 +10,7 @@ import {
   Alert,
   ImageBackground,
 } from 'react-native';
-import { MaterialIcons, FontAwesome } from 'react-native-vector-icons';
+// import { MaterialIcons, FontAwesome } from 'react-native-vector-icons';
 import { Button, CheckBox } from 'react-native-elements';
 import RadioButtonRN from 'radio-buttons-react-native';
 import { TextInputMask } from 'react-native-masked-text';

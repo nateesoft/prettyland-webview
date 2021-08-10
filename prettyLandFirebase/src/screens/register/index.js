@@ -11,7 +11,7 @@ export default function RegisterHome() {
       <Stack.Screen
         name="RegisterForm"
         component={RegisterForm}
-        options={{ title: 'Back' }}
+        options={{ title: 'Back', headerShown: false }}
       />
     </Stack.Navigator>
   );

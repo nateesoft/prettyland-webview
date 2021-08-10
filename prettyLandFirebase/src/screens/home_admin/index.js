@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import {
-  Ionicons,
-  MaterialIcons,
-  Feather,
-  MaterialCommunityIcons,
-} from 'react-native-vector-icons';
+// import {
+//   Ionicons,
+//   MaterialIcons,
+//   Feather,
+//   MaterialCommunityIcons,
+// } from 'react-native-vector-icons';
 // import { View, Text } from 'react-native';
 
 /* all screen */

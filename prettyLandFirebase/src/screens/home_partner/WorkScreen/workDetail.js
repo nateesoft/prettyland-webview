@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, ImageBackground } from 'react-native';
 import { Button, Text, Input } from 'react-native-elements';
-import { AntDesign, MaterialIcons } from 'react-native-vector-icons';
+// import { AntDesign, MaterialIcons } from 'react-native-vector-icons';
 import moment from 'moment';
 
 import firebase from '../../../util/firebase';

@@ -13,7 +13,7 @@ import {
 } from 'react-native';
 import * as ImagePicker from 'react-native-image-picker';
 import { Button as ButtonAction, Text } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
+// import Icon from 'react-native-vector-icons/FontAwesome';
 import uuid from 'react-native-uuid';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import Moment from 'moment';

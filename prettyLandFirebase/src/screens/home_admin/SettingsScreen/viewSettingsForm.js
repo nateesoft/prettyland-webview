@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, ImageBackground, Alert } from 'react-native';
 import { Button, Text, Input } from 'react-native-elements';
-import { FontAwesome } from 'react-native-vector-icons';
+// import { FontAwesome } from 'react-native-vector-icons';
 
 import firebase from '../../../util/firebase';
 import { getDocument } from '../../../util';
@@ -86,14 +86,14 @@ const ViewSettingForm = ({ navigation, route }) => {
           />
         </View>
         <Button
-          icon={
-            <FontAwesome
-              name="save"
-              size={20}
-              color="white"
-              style={{ marginRight: 5 }}
-            />
-          }
+          // icon={
+          //   <FontAwesome
+          //     name="save"
+          //     size={20}
+          //     color="white"
+          //     style={{ marginRight: 5 }}
+          //   />
+          // }
           iconLeft
           buttonStyle={styles.btnSave}
           title="บันทึกข้อมูล"

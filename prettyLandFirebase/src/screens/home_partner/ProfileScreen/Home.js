@@ -13,12 +13,12 @@ import {
 } from 'react-native';
 import Video from 'react-native-video';
 
-import {
-  FontAwesome,
-  Feather,
-  FontAwesome5,
-  MaterialCommunityIcons,
-} from 'react-native-vector-icons';
+// import {
+//   FontAwesome,
+//   Feather,
+//   FontAwesome5,
+//   MaterialCommunityIcons,
+// } from 'react-native-vector-icons';
 import Moment from 'moment';
 import { Button } from 'react-native-elements';
 

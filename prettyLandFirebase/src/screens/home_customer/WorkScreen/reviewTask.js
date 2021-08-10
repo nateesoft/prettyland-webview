@@ -9,7 +9,7 @@ import {
   Text,
 } from 'react-native';
 import { Button } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
+// import Icon from 'react-native-vector-icons/FontAwesome';
 import StarRating from 'react-native-star-rating';
 
 import { updatePosts } from '../../../apis';

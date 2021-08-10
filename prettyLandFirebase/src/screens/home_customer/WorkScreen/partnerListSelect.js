@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import { Text } from 'react-native';
 import { Button } from 'react-native-elements';
-import { MaterialIcons } from 'react-native-vector-icons';
+// import { MaterialIcons } from 'react-native-vector-icons';
 
 import firebase from '../../../util/firebase';
 import { snapshotToArray, getDocument } from '../../../util';

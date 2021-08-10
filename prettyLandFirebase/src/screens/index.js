@@ -10,7 +10,7 @@ import {
   TouchableNativeFeedback,
 } from 'react-native';
 import { Button } from 'react-native-elements/dist/buttons/Button';
-import Icon from 'react-native-vector-icons/AntDesign';
+// import Icon from 'react-native-vector-icons/AntDesign';
 
 import { checkToSendAllBroadcastToAllUser } from '../apis';
 import firebase from '../util/firebase';

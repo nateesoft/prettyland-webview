@@ -7,7 +7,7 @@ import {
   Image,
 } from 'react-native';
 import { Button, Text } from 'react-native-elements';
-import { AntDesign, Ionicons } from 'react-native-vector-icons';
+// import { AntDesign, Ionicons } from 'react-native-vector-icons';
 import Moment from 'moment';
 
 import { updatePosts, adminConfirmNewPost } from '../../../apis';

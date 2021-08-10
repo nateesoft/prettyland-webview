@@ -10,9 +10,9 @@ import {
   Button,
 } from 'react-native';
 import { Text, Button as ButtonAction } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
+// import Icon from 'react-native-vector-icons/FontAwesome';
+// import { FontAwesome } from 'react-native-vector-icons';
 import RadioButtonRN from 'radio-buttons-react-native';
-import { FontAwesome } from 'react-native-vector-icons';
 import { TextInputMask } from 'react-native-masked-text';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import Moment from 'moment';

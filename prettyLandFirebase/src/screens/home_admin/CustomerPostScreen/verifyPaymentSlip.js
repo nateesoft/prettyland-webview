@@ -9,7 +9,7 @@ import {
   SafeAreaView,
 } from 'react-native';
 import { Button, Text } from 'react-native-elements';
-import { AntDesign } from 'react-native-vector-icons';
+// import { AntDesign } from 'react-native-vector-icons';
 
 import { adminSaveConfirmPayment } from '../../../apis';
 import { AppConfig } from '../../../Constants';

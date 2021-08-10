@@ -1,12 +1,18 @@
 import React from 'react';
-import { StyleSheet, View, ImageBackground, ScrollView } from 'react-native';
-import { Button, Text } from 'react-native-elements';
 import {
-  FontAwesome,
-  MaterialIcons,
-  Ionicons,
-  MaterialCommunityIcons,
-} from 'react-native-vector-icons';
+  StyleSheet,
+  View,
+  ImageBackground,
+  ScrollView,
+  SafeAreaView,
+} from 'react-native';
+import { Button, Text } from 'react-native-elements';
+// import {
+//   FontAwesome,
+//   MaterialIcons,
+//   Ionicons,
+//   MaterialCommunityIcons,
+// } from 'react-native-vector-icons';
 
 import { AppConfig } from '../../../Constants';
 
@@ -18,124 +24,126 @@ const SettingsCategory = ({ navigation, route }) => {
       source={AppConfig.bgImage}
       style={styles.imageBg}
       resizeMode="contain">
-      <Text style={styles.textTopic}>ตั้งค่าระบบ / รายงาน</Text>
-      <ScrollView>
-        <View style={[styles.cardDetail, { justifyContent: 'center' }]}>
-          {role === 'superadmin' && (
+      <SafeAreaView style={{ height: '93%' }}>
+        <Text style={styles.textTopic}>ตั้งค่าระบบ / รายงาน</Text>
+        <ScrollView>
+          <View style={[styles.cardDetail, { justifyContent: 'center' }]}>
+            {role === 'superadmin' && (
+              <Button
+                // icon={
+                //   <FontAwesome
+                //     name="user-secret"
+                //     size={20}
+                //     color="white"
+                //     style={{ marginRight: 5 }}
+                //   />
+                // }
+                titleStyle={{ fontSize: 22 }}
+                iconLeft
+                buttonStyle={styles.btnNewAdmin}
+                title="เพิ่มข้อมูลบัญชีธนาคาร"
+                onPress={() => navigation.navigate('New-Bank-Form')}
+              />
+            )}
+            {role === 'superadmin' && (
+              <Button
+                // icon={
+                //   <FontAwesome
+                //     name="user-secret"
+                //     size={20}
+                //     color="white"
+                //     style={{ marginRight: 5 }}
+                //   />
+                // }
+                titleStyle={{ fontSize: 22 }}
+                iconLeft
+                buttonStyle={styles.btnNewAdmin}
+                title="เพิ่มข้อมูลผู้ใช้งาน"
+                onPress={() => navigation.navigate('New-Admin-Form')}
+              />
+            )}
+            {role === 'superadmin' && (
+              <Button
+                // icon={
+                //   <MaterialIcons
+                //     name="app-settings-alt"
+                //     size={20}
+                //     color="white"
+                //     style={{ marginRight: 5 }}
+                //   />
+                // }
+                titleStyle={{ fontSize: 22 }}
+                iconLeft
+                buttonStyle={styles.btnPostConfig}
+                title="จัดการข้อมูลระบบ"
+                onPress={() => navigation.navigate('View-Settings')}
+              />
+            )}
+            {role === 'superadmin' && (
+              <Button
+                // icon={
+                //   <FontAwesome
+                //     name="user-secret"
+                //     size={20}
+                //     color="white"
+                //     style={{ marginRight: 5 }}
+                //   />
+                // }
+                titleStyle={{ fontSize: 22 }}
+                iconLeft
+                buttonStyle={styles.btnListAdmin}
+                title="ข้อมูล admin"
+                onPress={() => navigation.navigate('Admin-Lists')}
+              />
+            )}
             <Button
               // icon={
-              //   <FontAwesome
-              //     name="user-secret"
-              //     size={20}
+              //   <Ionicons
+              //     name="newspaper-sharp"
+              //     size={24}
               //     color="white"
               //     style={{ marginRight: 5 }}
               //   />
               // }
               titleStyle={{ fontSize: 22 }}
               iconLeft
-              buttonStyle={styles.btnNewAdmin}
-              title="เพิ่มข้อมูลบัญชีธนาคาร"
-              onPress={() => navigation.navigate('New-Bank-Form')}
+              buttonStyle={styles.btnMemberReport}
+              title="รายงานการสมัครสมาชิก"
+              onPress={() => navigation.navigate('Member-Register-Lists')}
             />
-          )}
-          {role === 'superadmin' && (
             <Button
               // icon={
-              //   <FontAwesome
-              //     name="user-secret"
-              //     size={20}
+              //   <Ionicons
+              //     name="newspaper-sharp"
+              //     size={24}
               //     color="white"
               //     style={{ marginRight: 5 }}
               //   />
               // }
               titleStyle={{ fontSize: 22 }}
               iconLeft
-              buttonStyle={styles.btnNewAdmin}
-              title="เพิ่มข้อมูลผู้ใช้งาน"
-              onPress={() => navigation.navigate('New-Admin-Form')}
+              buttonStyle={styles.btnPartnerReport}
+              title="รายงานสมัครหางาน"
+              onPress={() => navigation.navigate('Partner-Register-Lists')}
             />
-          )}
-          {role === 'superadmin' && (
             <Button
               // icon={
-              //   <MaterialIcons
-              //     name="app-settings-alt"
-              //     size={20}
+              //   <MaterialCommunityIcons
+              //     name="email-send"
+              //     size={24}
               //     color="white"
-              //     style={{ marginRight: 5 }}
+              //     style={{ marginLeft: 10 }}
               //   />
               // }
               titleStyle={{ fontSize: 22 }}
-              iconLeft
-              buttonStyle={styles.btnPostConfig}
-              title="จัดการข้อมูลระบบ"
-              onPress={() => navigation.navigate('View-Settings')}
+              iconRight
+              buttonStyle={styles.btnBroadcast}
+              title="ส่งข้อมูล Broadcast"
+              onPress={() => navigation.navigate('Send-Broadcast')}
             />
-          )}
-          {role === 'superadmin' && (
-            <Button
-              // icon={
-              //   <FontAwesome
-              //     name="user-secret"
-              //     size={20}
-              //     color="white"
-              //     style={{ marginRight: 5 }}
-              //   />
-              // }
-              titleStyle={{ fontSize: 22 }}
-              iconLeft
-              buttonStyle={styles.btnListAdmin}
-              title="ข้อมูล admin"
-              onPress={() => navigation.navigate('Admin-Lists')}
-            />
-          )}
-          <Button
-            // icon={
-            //   <Ionicons
-            //     name="newspaper-sharp"
-            //     size={24}
-            //     color="white"
-            //     style={{ marginRight: 5 }}
-            //   />
-            // }
-            titleStyle={{ fontSize: 22 }}
-            iconLeft
-            buttonStyle={styles.btnMemberReport}
-            title="รายงานการสมัครสมาชิก"
-            onPress={() => navigation.navigate('Member-Register-Lists')}
-          />
-          <Button
-            // icon={
-            //   <Ionicons
-            //     name="newspaper-sharp"
-            //     size={24}
-            //     color="white"
-            //     style={{ marginRight: 5 }}
-            //   />
-            // }
-            titleStyle={{ fontSize: 22 }}
-            iconLeft
-            buttonStyle={styles.btnPartnerReport}
-            title="รายงานสมัครหางาน"
-            onPress={() => navigation.navigate('Partner-Register-Lists')}
-          />
-          <Button
-            // icon={
-            //   <MaterialCommunityIcons
-            //     name="email-send"
-            //     size={24}
-            //     color="white"
-            //     style={{ marginLeft: 10 }}
-            //   />
-            // }
-            titleStyle={{ fontSize: 22 }}
-            iconRight
-            buttonStyle={styles.btnBroadcast}
-            title="ส่งข้อมูล Broadcast"
-            onPress={() => navigation.navigate('Send-Broadcast')}
-          />
-        </View>
-      </ScrollView>
+          </View>
+        </ScrollView>
+      </SafeAreaView>
     </ImageBackground>
   );
 };

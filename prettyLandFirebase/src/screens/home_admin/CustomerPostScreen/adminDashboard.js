@@ -7,6 +7,7 @@ import {
   Image,
   ImageBackground,
   Alert,
+  SafeAreaView,
 } from 'react-native';
 
 // import BroadcastNews from '../../../components/BroadcastNews';
@@ -155,7 +156,8 @@ const AdminDashboard = ({ navigation, route }) => {
       source={AppConfig.bgImage}
       style={styles.imageBg}
       resizeMode="contain">
-      {/* {modelData &&
+      <SafeAreaView style={{ height: '93%' }}>
+        {/* {modelData &&
         modelData.map((item, index) => (
           <BroadcastNews
             key={`${userId}/${item.id}`}
@@ -167,30 +169,31 @@ const AdminDashboard = ({ navigation, route }) => {
             userId={userId}
           />
         ))} */}
-      {items.length > 0 && (
-        <View style={styles.container}>
-          <DisplayCard
-            data={items[0]}
-            count={sumType1}
-            badge={postType1Count}
-          />
-          <DisplayCard
-            data={items[1]}
-            count={sumType2}
-            badge={postType2Count}
-          />
-          <DisplayCard
-            data={items[2]}
-            count={sumType3}
-            badge={postType3Count}
-          />
-          <DisplayCard
-            data={items[3]}
-            count={sumType4}
-            badge={postType4Count}
-          />
-        </View>
-      )}
+        {items.length > 0 && (
+          <View style={styles.container}>
+            <DisplayCard
+              data={items[0]}
+              count={sumType1}
+              badge={postType1Count}
+            />
+            <DisplayCard
+              data={items[1]}
+              count={sumType2}
+              badge={postType2Count}
+            />
+            <DisplayCard
+              data={items[2]}
+              count={sumType3}
+              badge={postType3Count}
+            />
+            <DisplayCard
+              data={items[3]}
+              count={sumType4}
+              badge={postType4Count}
+            />
+          </View>
+        )}
+      </SafeAreaView>
     </ImageBackground>
   );
 };

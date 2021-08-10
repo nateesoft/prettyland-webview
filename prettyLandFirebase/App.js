@@ -44,13 +44,13 @@ const App = () => {
         <Stack.Screen
           name="Register"
           component={RegisterHome}
-          options={{ title: 'Register', headerShown: false }}
+          options={{ title: 'Register' }}
         />
         {/* Login Form */}
         <Stack.Screen
           name="Login"
           component={LoginHome}
-          options={{ title: 'Login', headerShown: false }}
+          options={{ title: 'Login' }}
         />
         {/* Auth Screen */}
         <Stack.Screen

@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import { Button, Text } from 'react-native-elements';
 import DropDownPicker from 'react-native-dropdown-picker';
-import { MaterialCommunityIcons } from 'react-native-vector-icons';
+// import { MaterialCommunityIcons } from 'react-native-vector-icons';
 
 import { getCountryList } from '../../../data/apis';
 import { AppConfig } from '../../../Constants';

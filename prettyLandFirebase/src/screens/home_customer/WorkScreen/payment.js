@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 import * as ImagePicker from 'react-native-image-picker';
 import { Button, Text } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
+// import Icon from 'react-native-vector-icons/FontAwesome';
 import { TextInputMask } from 'react-native-masked-text';
 import * as Progress from 'react-native-progress';
 
