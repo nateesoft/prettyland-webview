@@ -208,7 +208,6 @@ const MemberAllListScreen = ({ navigation, route }) => {
       style={styles.imageBg}
       resizeMode="contain">
       <SafeAreaView style={{ height: '100%' }}>
-        <Text style={styles.textTopic}>รายชื่อผู้สมัครงาน</Text>
         <View style={styles.container}>
           {members.length === 0 && (
             <CardNotfound text="ไม่พบข้อมูลสมาชิกในระบบ" />

@@ -38,31 +38,18 @@ const HomeAdmin = ({ navigation, route }) => {
     return () => ref.off('value', listener);
   }, []);
 
-  // const HomeScreen = () => (
-  //   <View>
-  //     <Text>HomeScreen: {userId}</Text>
-  //   </View>
-  // );
-  // const SettingsScreen = () => (
-  //   <View>
-  //     <Text>SettingsScreen: {screen}</Text>
-  //   </View>
-  // );
-
-  // return (
-  //   <Tab.Navigator>
-  //     <Tab.Screen name="Home" component={HomeScreen} />
-  //     <Tab.Screen name="Settings" component={SettingsScreen} />
-  //   </Tab.Navigator>
-  // );
-
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={() => ({
+        tabBarActiveTintColor: 'tomato',
+        tabBarInactiveTintColor: 'gray',
+      })}>
       <Tab.Screen
         name="a-Task"
         component={CustomerPostNavigator}
         options={{
           title: 'โพสท์ทั้งหมด',
+          headerShown: false,
         }}
         initialParams={{ userId }}
       />
@@ -76,6 +63,7 @@ const HomeAdmin = ({ navigation, route }) => {
             backgroundColor: 'rgb(70, 240, 238)',
             color: 'red',
           },
+          headerShown: false,
         }}
         initialParams={{ userId }}
       />
@@ -84,6 +72,7 @@ const HomeAdmin = ({ navigation, route }) => {
         component={ProfileNavigator}
         options={{
           title: 'ข้อมูลส่วนตัว',
+          headerShown: false,
         }}
         initialParams={{ userId }}
       />
@@ -92,6 +81,7 @@ const HomeAdmin = ({ navigation, route }) => {
         component={SettingsNavigator}
         options={{
           title: 'ตั้งค่าระบบ',
+          headerShown: false,
         }}
         initialParams={{ userId, role: screen }}
       />
@@ -100,6 +90,7 @@ const HomeAdmin = ({ navigation, route }) => {
         component={LogoutScreen}
         options={{
           title: 'Logout',
+          headerShown: false,
         }}
         initialParams={{ userId }}
       />

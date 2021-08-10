@@ -131,7 +131,7 @@ const ListMyWorkScreen = ({ navigation, route }) => {
       style={styles.imageBg}
       resizeMode="contain">
       <SafeAreaView style={{ height: '100%' }}>
-        <Text style={styles.textTopic}>งานที่รอดำเนินการ</Text>
+        <Text style={styles.textTopic}>งานที่เสนอทั้งหมด</Text>
         <View style={styles.container}>
           {filterList.length === 0 && (
             <CardNotfound text="ไม่พบข้อมูลโพสท์ในระบบ" />

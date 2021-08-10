@@ -147,14 +147,14 @@ const LoginScreen = ({ navigation, route }) => {
         )} */}
         <Text style={styles.textOr}>------ OR ------</Text>
         <Button
-          icon={
-            <Icon
-              name="login"
-              size={20}
-              style={{ marginLeft: 10 }}
-              color="white"
-            />
-          }
+          // icon={
+          //   <Icon
+          //     name="login"
+          //     size={20}
+          //     style={{ marginLeft: 10 }}
+          //     color="white"
+          //   />
+          // }
           iconRight
           title="LOGIN"
           titleStyle={{

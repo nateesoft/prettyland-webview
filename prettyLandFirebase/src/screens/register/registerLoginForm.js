@@ -160,14 +160,14 @@ const RegisterLoginForm = ({ navigation, route }) => {
             <Button
               title="ลงทะเบียน"
               iconLeft
-              icon={
-                <AntDesign
-                  name="save"
-                  color="white"
-                  size={24}
-                  style={{ marginHorizontal: 8 }}
-                />
-              }
+              // icon={
+              //   <AntDesign
+              //     name="save"
+              //     color="white"
+              //     size={24}
+              //     style={{ marginHorizontal: 8 }}
+              //   />
+              // }
               buttonStyle={{
                 backgroundColor: '#ff2fe6',
                 marginTop: 20,

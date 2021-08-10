@@ -19,14 +19,12 @@ const AdminTaskNavigator = ({ navigator, route }) => {
         name="Admin-Dashboard"
         component={AdminDashboard}
         options={{
-          title: 'Back',
+          title: 'โพสท์ทั้งหมดในระบบ',
           headerStyle: {
             backgroundColor: '#ff2fe6',
           },
           headerTintColor: 'white',
-          headerTitle: props => (
-            <LogoTitle title="โพสท์ทั้งหมดในระบบ" {...props} />
-          ),
+          headerShown: false,
         }}
         initialParams={{ partnerType: 'all', userId }}
       />
@@ -39,7 +37,6 @@ const AdminTaskNavigator = ({ navigator, route }) => {
             backgroundColor: '#ff2fe6',
           },
           headerTintColor: 'white',
-          headerTitle: props => <LogoTitle title="Pretty Land" {...props} />,
         }}
         initialParams={{ partnerType: 'all', userId }}
       />

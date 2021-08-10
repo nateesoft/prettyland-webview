@@ -22,6 +22,7 @@ const AdminMemberNavigator = () => {
           },
           headerTintColor: 'white',
           headerTitle: props => <LogoTitle title="Pretty Land" {...props} />,
+          headerShown: false,
         }}
       />
       <Stack.Screen
@@ -33,7 +34,6 @@ const AdminMemberNavigator = () => {
             backgroundColor: '#ff2fe6',
           },
           headerTintColor: 'white',
-          headerTitle: props => <LogoTitle title="Pretty Land" {...props} />,
         }}
       />
       <Stack.Screen

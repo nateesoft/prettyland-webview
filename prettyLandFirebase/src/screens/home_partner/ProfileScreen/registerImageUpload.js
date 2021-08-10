@@ -421,14 +421,14 @@ const RegisterImageUpload = ({ navigation, route }) => {
         <Button
           title="อัพโหลด"
           iconLeft
-          icon={
-            <MaterialCommunityIcons
-              name="cloud-upload"
-              color="white"
-              size={24}
-              style={{ marginHorizontal: 8 }}
-            />
-          }
+          // icon={
+          //   <MaterialCommunityIcons
+          //     name="cloud-upload"
+          //     color="white"
+          //     size={24}
+          //     style={{ marginHorizontal: 8 }}
+          //   />
+          // }
           buttonStyle={{
             backgroundColor: 'green',
             marginTop: 20,
@@ -444,14 +444,14 @@ const RegisterImageUpload = ({ navigation, route }) => {
         <Button
           title="บันทึกข้อมูล"
           iconLeft
-          icon={
-            <AntDesign
-              name="lock"
-              color="white"
-              size={24}
-              style={{ marginHorizontal: 8 }}
-            />
-          }
+          // icon={
+          //   <AntDesign
+          //     name="lock"
+          //     color="white"
+          //     size={24}
+          //     style={{ marginHorizontal: 8 }}
+          //   />
+          // }
           buttonStyle={{
             backgroundColor: '#65A3E1',
             marginTop: 5,

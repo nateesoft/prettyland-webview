@@ -176,14 +176,14 @@ const RegisterPartnerForm = ({ navigation, route }) => {
               <Button
                 title="ถัดไป"
                 iconLeft
-                icon={
-                  <AntDesign
-                    name="bank"
-                    color="white"
-                    size={24}
-                    style={{ marginHorizontal: 15 }}
-                  />
-                }
+                // icon={
+                //   <AntDesign
+                //     name="bank"
+                //     color="white"
+                //     size={24}
+                //     style={{ marginHorizontal: 15 }}
+                //   />
+                // }
                 buttonStyle={{
                   backgroundColor: '#65A3E1',
                   marginTop: 20,

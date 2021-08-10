@@ -64,14 +64,14 @@ const SelectProvince = props => {
           />
           <View style={styles.buttonFooter}>
             <Button
-              icon={
-                <MaterialCommunityIcons
-                  name="page-next-outline"
-                  size={20}
-                  color="white"
-                  style={{ marginHorizontal: 8 }}
-                />
-              }
+              // icon={
+              //   <MaterialCommunityIcons
+              //     name="page-next-outline"
+              //     size={20}
+              //     color="white"
+              //     style={{ marginHorizontal: 8 }}
+              //   />
+              // }
               iconLeft
               buttonStyle={{
                 backgroundColor: '#ff2fe6',

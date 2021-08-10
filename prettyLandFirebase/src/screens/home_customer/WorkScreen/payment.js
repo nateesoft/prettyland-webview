@@ -381,14 +381,14 @@ const PaymentForm = ({ navigation, route }) => {
                 />
               </View>
               <Button
-                icon={
-                  <Icon
-                    name="file"
-                    size={15}
-                    color="white"
-                    style={{ marginRight: 5 }}
-                  />
-                }
+                // icon={
+                //   <Icon
+                //     name="file"
+                //     size={15}
+                //     color="white"
+                //     style={{ marginRight: 5 }}
+                //   />
+                // }
                 buttonStyle={{ marginTop: 10 }}
                 title="เลือกไฟล์...สลิปสำหรับการโอนเงิน"
                 onPress={pickImage}
@@ -411,14 +411,14 @@ const PaymentForm = ({ navigation, route }) => {
                 )}
                 <View style={{ alignSelf: 'center', padding: 5 }}>
                   <Button
-                    icon={
-                      <Icon
-                        name="save"
-                        size={20}
-                        color="white"
-                        style={{ marginRight: 5 }}
-                      />
-                    }
+                    // icon={
+                    //   <Icon
+                    //     name="save"
+                    //     size={20}
+                    //     color="white"
+                    //     style={{ marginRight: 5 }}
+                    //   />
+                    // }
                     buttonStyle={styles.buttonConfirm}
                     title="ส่งข้อมูลการโอนเงิน"
                     onPress={() => saveCustomerPayment()}

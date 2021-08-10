@@ -20,7 +20,7 @@ const ProfileNavigator = ({ navigation, route }) => {
             backgroundColor: '#ff2fe6',
           },
           headerTintColor: 'white',
-          headerTitle: props => <LogoTitle title="Pretty Land" {...props} />,
+          headerShown: false,
         }}
         initialParams={{ userId, status }}
       />

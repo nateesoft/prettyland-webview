@@ -151,14 +151,14 @@ const TimePriceForm = props => {
             </View>
             <View style={styles.buttonFooter}>
               <ButtonAction
-                icon={
-                  <Icon
-                    name="send"
-                    size={20}
-                    color="white"
-                    style={{ marginHorizontal: 8 }}
-                  />
-                }
+                // icon={
+                //   <Icon
+                //     name="send"
+                //     size={20}
+                //     color="white"
+                //     style={{ marginHorizontal: 8 }}
+                //   />
+                // }
                 iconLeft
                 buttonStyle={{
                   backgroundColor: '#ff2fe6',

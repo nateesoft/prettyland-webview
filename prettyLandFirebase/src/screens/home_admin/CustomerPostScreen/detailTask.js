@@ -123,14 +123,14 @@ const ConfirmTaskScreen = ({ navigation, route }) => {
             item.status === AppConfig.PostsStatus.waitAdminApprovePost) && (
             <View>
               <Button
-                icon={
-                  <AntDesign
-                    name="checkcircleo"
-                    size={15}
-                    color="white"
-                    style={{ marginRight: 5 }}
-                  />
-                }
+                // icon={
+                //   <AntDesign
+                //     name="checkcircleo"
+                //     size={15}
+                //     color="white"
+                //     style={{ marginRight: 5 }}
+                //   />
+                // }
                 iconLeft
                 buttonStyle={{
                   margin: 5,
@@ -142,14 +142,14 @@ const ConfirmTaskScreen = ({ navigation, route }) => {
                 onPress={() => updateToApprove()}
               />
               <Button
-                icon={
-                  <Ionicons
-                    name="trash-bin-outline"
-                    size={15}
-                    color="white"
-                    style={{ marginRight: 5 }}
-                  />
-                }
+                // icon={
+                //   <Ionicons
+                //     name="trash-bin-outline"
+                //     size={15}
+                //     color="white"
+                //     style={{ marginRight: 5 }}
+                //   />
+                // }
                 iconLeft
                 buttonStyle={{
                   margin: 5,

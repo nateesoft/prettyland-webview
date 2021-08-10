@@ -49,14 +49,7 @@ const HomeCustomer = ({ navigation, route }) => {
   }, []);
 
   return (
-    <Tab.Navigator
-      tabBarOptions={{
-        activeTintColor: 'purple',
-        inactiveTintColor: 'white',
-        style: {
-          backgroundColor: '#ff2fe6',
-        },
-      }}>
+    <Tab.Navigator>
       <Tab.Screen
         name="c-Home"
         component={HomeScreen}
@@ -65,6 +58,7 @@ const HomeCustomer = ({ navigation, route }) => {
           // tabBarIcon: ({ color, size }) => (
           //   <MaterialCommunityIcons name="home" color="white" size={size} />
           // ),
+          headerShown: false,
           color: 'white',
         }}
         initialParams={{ userId, status }}
@@ -77,6 +71,7 @@ const HomeCustomer = ({ navigation, route }) => {
           // tabBarIcon: ({ color, size }) => (
           //   <MaterialCommunityIcons name="post" color="white" size={size} />
           // ),
+          headerShown: false,
           tabBarBadge: postsChangeCount ? postsChangeCount : null,
           tabBarBadgeStyle: {
             backgroundColor: 'rgb(70, 240, 238)',
@@ -90,6 +85,7 @@ const HomeCustomer = ({ navigation, route }) => {
         component={ContactAdminScreen}
         options={{
           tabBarLabel: 'ติดต่อ Admin',
+          headerShown: false,
           // tabBarIcon: ({ color, size }) => (
           //   <MaterialIcons name="contact-phone" color="white" size={size} />
           // ),
@@ -101,6 +97,7 @@ const HomeCustomer = ({ navigation, route }) => {
         component={LogoutScreen}
         options={{
           tabBarLabel: 'Logout',
+          headerShown: false,
           // tabBarIcon: ({ color, size }) => (
           //   <MaterialCommunityIcons name="logout" color="white" size={size} />
           // ),

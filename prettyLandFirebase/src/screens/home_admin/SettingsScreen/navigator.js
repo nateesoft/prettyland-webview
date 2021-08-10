@@ -30,6 +30,7 @@ const AdminSettingsNavigator = ({ navigation, route }) => {
           },
           headerTintColor: 'white',
           headerTitle: props => <LogoTitle title="Pretty Land" {...props} />,
+          headerShown: false,
         }}
         initialParams={{ userId, role }}
       />

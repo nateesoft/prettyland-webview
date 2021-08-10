@@ -86,12 +86,12 @@ const ViewContact = ({ navigation, route }) => {
       <View style={styles.cardDetail}>
         <Text style={styles.textTopic}>Line ติดต่อผู้ดูแลระบบ</Text>
         <Button
-          icon={
-            <Image
-              source={lineLogo}
-              style={{ width: 24, height: 24, marginRight: 10 }}
-            />
-          }
+          // icon={
+          //   <Image
+          //     source={lineLogo}
+          //     style={{ width: 24, height: 24, marginRight: 10 }}
+          //   />
+          // }
           iconLeft
           buttonStyle={styles.btnContactLineButton}
           title="LINE CONNECT"

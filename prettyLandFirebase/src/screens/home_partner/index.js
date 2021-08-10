@@ -77,14 +77,7 @@ const HomePartner = ({ navigation, route }) => {
   }, []);
 
   return (
-    <Tab.Navigator
-      tabBarOptions={{
-        activeTintColor: 'purple',
-        inactiveTintColor: 'white',
-        style: {
-          backgroundColor: '#ff2fe6',
-        },
-      }}>
+    <Tab.Navigator>
       <Tab.Screen
         name="p-Home"
         component={HomeNavigator}
@@ -93,6 +86,7 @@ const HomePartner = ({ navigation, route }) => {
           // tabBarIcon: ({ color, size }) => (
           //   <FontAwesome5 name="kiss-wink-heart" color="white" size={size} />
           // ),
+          headerShown: false,
         }}
         initialParams={{ userId, status }}
       />
@@ -101,6 +95,7 @@ const HomePartner = ({ navigation, route }) => {
         component={RequestNavigator}
         options={{
           title: 'งานที่เสนอ',
+          headerShown: false,
           // tabBarIcon: ({ color, size }) => (
           //   <MaterialIcons name="request-quote" color="white" size={size} />
           // ),
@@ -117,6 +112,7 @@ const HomePartner = ({ navigation, route }) => {
         component={WorkNavigator}
         options={{
           title: 'งานของฉัน',
+          headerShown: false,
           // tabBarIcon: ({ color, size }) => (
           //   <Foundation name="social-foursquare" color="white" size={size} />
           // ),
@@ -133,6 +129,7 @@ const HomePartner = ({ navigation, route }) => {
         component={ProfileNavigator}
         options={{
           title: 'ข้อมูลส่วนตัว',
+          headerShown: false,
           // tabBarIcon: ({ color, size }) => (
           //   <MaterialCommunityIcons
           //     name="card-account-details"
@@ -148,6 +145,7 @@ const HomePartner = ({ navigation, route }) => {
         component={LogoutScreen}
         options={{
           title: 'Logout',
+          headerShown: false,
           // tabBarIcon: ({ color, size }) => (
           //   <MaterialCommunityIcons name="logout" color="white" size={size} />
           // ),

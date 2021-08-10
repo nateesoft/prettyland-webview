@@ -21,6 +21,7 @@ const RequestScreenNavigator = ({ navigation, route }) => {
           headerStyle: {
             backgroundColor: '#ff2fe6',
           },
+          headerShown: false,
           headerTintColor: 'white',
           headerTitle: props => <LogoTitle title="Pretty Land" {...props} />,
         }}

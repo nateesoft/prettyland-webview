@@ -140,14 +140,14 @@ const AddNewBankAccount = ({ navigation, route }) => {
             </View>
           </View>
           <Button
-            icon={
-              <Icon
-                name="save"
-                size={20}
-                color="white"
-                style={{ marginRight: 5 }}
-              />
-            }
+            // icon={
+            //   <Icon
+            //     name="save"
+            //     size={20}
+            //     color="white"
+            //     style={{ marginRight: 5 }}
+            //   />
+            // }
             iconLeft
             buttonStyle={styles.btnSave}
             title="อัพเดตข้อมูล"

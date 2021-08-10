@@ -170,14 +170,14 @@ const VerifyPaymentSlip = ({ navigation, route }) => {
             </ScrollView>
           </View>
           <Button
-            icon={
-              <AntDesign
-                name="checksquareo"
-                size={20}
-                color="white"
-                style={{ marginRight: 5 }}
-              />
-            }
+            // icon={
+            //   <AntDesign
+            //     name="checksquareo"
+            //     size={20}
+            //     color="white"
+            //     style={{ marginRight: 5 }}
+            //   />
+            // }
             buttonStyle={styles.buttonConfirm}
             title="ยืนยันข้อมูลการโอนเงิน"
             onPress={() => saveConfirmPayment()}

@@ -217,14 +217,14 @@ const WorkDetailScreen = ({ navigation, route }) => {
           partner.partnerStatus !== AppConfig.PostsStatus.partnerCloseJob &&
           item.status === AppConfig.PostsStatus.adminConfirmPayment && (
             <Button
-              icon={
-                <MaterialIcons
-                  name="meeting-room"
-                  size={24}
-                  color="white"
-                  style={{ marginRight: 5 }}
-                />
-              }
+              // icon={
+              //   <MaterialIcons
+              //     name="meeting-room"
+              //     size={24}
+              //     color="white"
+              //     style={{ marginRight: 5 }}
+              //   />
+              // }
               iconLeft
               buttonStyle={{
                 margin: 5,
@@ -238,14 +238,14 @@ const WorkDetailScreen = ({ navigation, route }) => {
           )}
         {partner.partnerStatus === AppConfig.PostsStatus.partnerStartWork && (
           <Button
-            icon={
-              <AntDesign
-                name="checkcircleo"
-                size={15}
-                color="white"
-                style={{ marginRight: 5 }}
-              />
-            }
+            // icon={
+            //   <AntDesign
+            //     name="checkcircleo"
+            //     size={15}
+            //     color="white"
+            //     style={{ marginRight: 5 }}
+            //   />
+            // }
             iconLeft
             buttonStyle={{
               margin: 5,
@@ -266,14 +266,14 @@ const WorkDetailScreen = ({ navigation, route }) => {
         {item.status === AppConfig.PostsStatus.waitPartnerConfrimWork && (
           <View>
             <Button
-              icon={
-                <MaterialIcons
-                  name="cancel"
-                  size={24}
-                  color="white"
-                  style={{ marginRight: 5 }}
-                />
-              }
+              // icon={
+              //   <MaterialIcons
+              //     name="cancel"
+              //     size={24}
+              //     color="white"
+              //     style={{ marginRight: 5 }}
+              //   />
+              // }
               iconLeft
               buttonStyle={{
                 margin: 5,
@@ -285,14 +285,14 @@ const WorkDetailScreen = ({ navigation, route }) => {
               onPress={() => partnerMassageCancel(userId)}
             />
             <Button
-              icon={
-                <AntDesign
-                  name="checkcircleo"
-                  size={24}
-                  color="white"
-                  style={{ marginRight: 5 }}
-                />
-              }
+              // icon={
+              //   <AntDesign
+              //     name="checkcircleo"
+              //     size={24}
+              //     color="white"
+              //     style={{ marginRight: 5 }}
+              //   />
+              // }
               iconLeft
               buttonStyle={{
                 margin: 5,

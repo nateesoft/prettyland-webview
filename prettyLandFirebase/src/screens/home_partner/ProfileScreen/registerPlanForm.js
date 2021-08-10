@@ -211,9 +211,9 @@ const RegisterPlanForm = ({ navigation, route }) => {
                 animationTypes={['shake']}
                 data={sexData}
                 selectedBtn={e => setSex(e.value)}
-                icon={
-                  <FontAwesome name="check-circle" size={25} color="#2c9dd1" />
-                }
+                // icon={
+                //   <FontAwesome name="check-circle" size={25} color="#2c9dd1" />
+                // }
                 initial={sex === 'male' ? 1 : sex === 'female' ? 2 : 3}
               />
             </View>
@@ -298,14 +298,14 @@ const RegisterPlanForm = ({ navigation, route }) => {
             <Button
               title="ถัดไป"
               iconLeft
-              icon={
-                <MaterialIcons
-                  name="meeting-room"
-                  color="white"
-                  size={24}
-                  style={{ marginHorizontal: 15 }}
-                />
-              }
+              // icon={
+              //   <MaterialIcons
+              //     name="meeting-room"
+              //     color="white"
+              //     size={24}
+              //     style={{ marginHorizontal: 15 }}
+              //   />
+              // }
               buttonStyle={{
                 backgroundColor: '#65A3E1',
                 marginTop: 20,

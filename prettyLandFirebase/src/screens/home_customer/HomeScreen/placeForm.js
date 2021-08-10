@@ -143,9 +143,9 @@ const PlaceForm = props => {
                 animationTypes={['shake']}
                 data={sexData}
                 selectedBtn={e => setSex(e.value)}
-                icon={
-                  <FontAwesome name="check-circle" size={25} color="#2c9dd1" />
-                }
+                // icon={
+                //   <FontAwesome name="check-circle" size={25} color="#2c9dd1" />
+                // }
                 initial={sex === 'male' ? 1 : sex === 'female' ? 2 : 3}
                 style={{ padding: 10 }}
               />
@@ -230,14 +230,14 @@ const PlaceForm = props => {
             </View>
             <View style={styles.buttonFooter}>
               <ButtonAction
-                icon={
-                  <Icon
-                    name="save"
-                    size={20}
-                    color="white"
-                    style={{ marginHorizontal: 8 }}
-                  />
-                }
+                // icon={
+                //   <Icon
+                //     name="save"
+                //     size={20}
+                //     color="white"
+                //     style={{ marginHorizontal: 8 }}
+                //   />
+                // }
                 iconLeft
                 buttonStyle={{
                   backgroundColor: '#ff2fe6',

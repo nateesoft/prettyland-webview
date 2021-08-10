@@ -162,14 +162,14 @@ const PartnerListSelect = ({ navigation, route }) => {
           <View style={{ alignItems: 'center' }}>
             <Button
               title="เข้าหน้ารับชำระ"
-              icon={
-                <MaterialIcons
-                  name="attach-money"
-                  size={20}
-                  color="white"
-                  style={{ marginRight: 10 }}
-                />
-              }
+              // icon={
+              //   <MaterialIcons
+              //     name="attach-money"
+              //     size={20}
+              //     color="white"
+              //     style={{ marginRight: 10 }}
+              //   />
+              // }
               onPress={() =>
                 navigation.navigate('Payment-Form', { item: postItem })
               }

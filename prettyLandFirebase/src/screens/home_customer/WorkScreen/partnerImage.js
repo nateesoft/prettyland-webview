@@ -236,14 +236,14 @@ export default function PartnerImage({ navigation, route }) {
           {selectStatus !== AppConfig.PostsStatus.customerConfirm ? (
             <Button
               title="เลือกคนนี้"
-              icon={
-                <AntDesign
-                  name="checkcircleo"
-                  size={20}
-                  style={{ marginRight: 5 }}
-                  color="white"
-                />
-              }
+              // icon={
+              //   <AntDesign
+              //     name="checkcircleo"
+              //     size={20}
+              //     style={{ marginRight: 5 }}
+              //     color="white"
+              //   />
+              // }
               color="red"
               buttonStyle={{
                 backgroundColor: '#ff2fe6',
