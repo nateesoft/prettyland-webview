@@ -70,11 +70,14 @@ const LoginScreen = ({ navigation, route }) => {
           ]}>
           Thailand
         </Text>
-        <Text style={styles.textDetail}>( Version {appVersion} )</Text>
+        <Text style={styles.textDetail}>
+          {AppConfig.env === 'demo' ? '[ DEMO ]' : `( Version ${appVersion} )`}
+        </Text>
         <TouchableHighlight
           underlayColor="pink"
           style={styles.btnLineClickContain}
-          onPress={() => navigate('Line-Login-Form')}>
+          // onPress={() => navigate('Line-Login-Form')}
+        >
           <View style={styles.btnContainer}>
             <Image source={lineLogo} style={{ width: 24, height: 24 }} />
             <Text

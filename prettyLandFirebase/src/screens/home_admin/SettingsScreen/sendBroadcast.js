@@ -13,7 +13,7 @@ import {
 } from 'react-native';
 import * as ImagePicker from 'react-native-image-picker';
 import { Button as ButtonAction, Text } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import uuid from 'react-native-uuid';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import Moment from 'moment';
@@ -275,7 +275,7 @@ const SendBroadcast = ({ navigation, route }) => {
           <View style={{ alignSelf: 'center', width: 200, marginVertical: 10 }}>
             <Button
               icon={
-                <Icon
+                <FontAwesome
                   name="file"
                   size={15}
                   color="white"
@@ -304,7 +304,7 @@ const SendBroadcast = ({ navigation, route }) => {
           )}
           <ButtonAction
             icon={
-              <Icon
+              <FontAwesome
                 name="save"
                 size={20}
                 color="white"

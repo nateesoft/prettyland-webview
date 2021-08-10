@@ -9,7 +9,7 @@ import {
   Button,
 } from 'react-native';
 import { Button as ButtonAction, Text } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { TextInputMask } from 'react-native-masked-text';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import Moment from 'moment';
@@ -152,7 +152,7 @@ const TimePriceForm = props => {
             <View style={styles.buttonFooter}>
               <ButtonAction
                 icon={
-                  <Icon
+                  <FontAwesome
                     name="send"
                     size={20}
                     color="white"

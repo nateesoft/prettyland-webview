@@ -12,7 +12,7 @@ export const loginApp = (username, password) => {
   return new Promise((resolve, reject) => {
     firebase
       .database()
-      .ref(getDocument('demo/members'))
+      .ref(getDocument('members'))
       .once('value', snapshot => {
         const members = snapshot.val();
         let isValid = false;

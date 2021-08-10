@@ -13,7 +13,7 @@ export default function HomeScreen({ navigation }) {
     console.log('Initial Home Screen');
     firebase
       .database()
-      .ref('demo/bank_account')
+      .ref('bank_account')
       .once('value', snapshot => {
         console.log(snapshot.val());
       });

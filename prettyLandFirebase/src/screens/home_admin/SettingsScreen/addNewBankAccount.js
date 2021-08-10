@@ -8,7 +8,7 @@ import {
   FlatList,
 } from 'react-native';
 import { Button, Text } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { TextInputMask } from 'react-native-masked-text';
 
@@ -141,7 +141,7 @@ const AddNewBankAccount = ({ navigation, route }) => {
           </View>
           <Button
             icon={
-              <Icon
+              <FontAwesome
                 name="save"
                 size={20}
                 color="white"

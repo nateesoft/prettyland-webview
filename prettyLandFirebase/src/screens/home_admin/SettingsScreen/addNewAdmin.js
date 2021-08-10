@@ -9,7 +9,7 @@ import {
   ScrollView,
 } from 'react-native';
 import { Button, Text } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import base64 from 'react-native-base64';
 import uuid from 'react-native-uuid';
 import DropDownPicker from 'react-native-dropdown-picker';
@@ -202,7 +202,7 @@ const AddNewAdminForm = ({ navigation, route }) => {
             </View>
             <Button
               icon={
-                <Icon
+                <FontAwesome
                   name="save"
                   size={20}
                   color="white"

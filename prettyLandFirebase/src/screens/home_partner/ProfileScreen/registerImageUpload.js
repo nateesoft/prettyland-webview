@@ -12,7 +12,7 @@ import {
   ImageBackground,
 } from 'react-native';
 import * as Progress from 'react-native-progress';
-import * as ImagePicker from 'react-native-image-picker';
+import { launchImageLibrary } from 'react-native-image-picker';
 import Video from 'react-native-video';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -88,37 +88,46 @@ const RegisterImageUpload = ({ navigation, route }) => {
     navigation.navigate(goTo ? goTo : 'WelcomeApp');
   };
 
-  const selectImage = async handleImg => {
-    let result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images,
-      allowsEditing: true,
-      videoExportPreset: ImagePicker.VideoExportPreset.MediumQuality,
-    });
-    if (!result.cancelled) {
-      handleImg(result.uri);
+  const selectImage = async (handleImg, type = 'image') => {
+    let options = {
+      title: 'Select Image',
+      customButtons: [
+        { name: 'customOptionKey', title: 'Choose Photo from Custom Option' },
+      ],
+      storageOptions: {
+        skipBackup: true,
+        path: 'images',
+      },
+    };
+    if (type === 'video') {
+      options = {
+        title: 'Select Video',
+        mediaType: 'video',
+        customButtons: [
+          { name: 'customOptionKey', title: 'Choose Video from Custom Option' },
+        ],
+        storageOptions: {
+          skipBackup: true,
+          path: 'images',
+        },
+      };
     }
+
+    launchImageLibrary(options, response => {
+      if (response.didCancel) {
+        console.log('User cancelled image picker');
+      } else if (response.error) {
+        console.log('ImagePicker Error: ', response.error);
+      } else if (response.customButton) {
+        console.log('User tapped custom button: ', response.customButton);
+      } else {
+        handleImg(response.assets[0].uri);
+      }
+    });
   };
 
   const selectVideo = async handleVideo => {
-    const permissionResult =
-      await ImagePicker.requestMediaLibraryPermissionsAsync();
-    if (permissionResult.granted === false) {
-      Alert.alert(
-        'แจ้งเตือน',
-        'ขออภัย, กรุณาให้สิทธิ์การเข้าถึงรูปภาพของท่าน!',
-      );
-      return;
-    }
-
-    let result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Videos,
-      allowsEditing: false,
-      videoExportPreset: ImagePicker.VideoExportPreset.LowQuality,
-    });
-
-    if (!result.cancelled) {
-      handleVideo(result.uri);
-    }
+    selectImage(handleVideo, 'video');
   };
 
   useEffect(() => {

@@ -9,7 +9,7 @@ import {
   Text,
 } from 'react-native';
 import { Button } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import StarRating from 'react-native-star-rating';
 
 import { updatePosts } from '../../../apis';
@@ -188,7 +188,7 @@ const ReviewTaskScreen = props => {
           {postDetail.status === AppConfig.PostsStatus.customerNewPostDone && (
             <Button
               icon={
-                <Icon
+                <FontAwesome
                   name="close"
                   size={15}
                   color="white"
@@ -217,7 +217,7 @@ const ReviewTaskScreen = props => {
               <Text>ให้ {rate} คะแนน</Text>
               <Button
                 icon={
-                  <Icon
+                  <FontAwesome
                     name="save"
                     size={24}
                     color="white"
