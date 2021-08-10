@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import {
-  MaterialCommunityIcons,
-  MaterialIcons,
-} from 'react-native-vector-icons';
+// import {
+//   MaterialCommunityIcons,
+//   MaterialIcons,
+// } from 'react-native-vector-icons';
 
 /* all screen */
 import HomeScreen from './HomeScreen/navigator';
@@ -62,9 +62,9 @@ const HomeCustomer = ({ navigation, route }) => {
         component={HomeScreen}
         options={{
           title: 'หน้าหลัก',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="home" color="white" size={size} />
-          ),
+          // tabBarIcon: ({ color, size }) => (
+          //   <MaterialCommunityIcons name="home" color="white" size={size} />
+          // ),
           color: 'white',
         }}
         initialParams={{ userId, status }}
@@ -74,9 +74,9 @@ const HomeCustomer = ({ navigation, route }) => {
         component={WorkScreen}
         options={{
           tabBarLabel: 'รายการโพสท์',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="post" color="white" size={size} />
-          ),
+          // tabBarIcon: ({ color, size }) => (
+          //   <MaterialCommunityIcons name="post" color="white" size={size} />
+          // ),
           tabBarBadge: postsChangeCount ? postsChangeCount : null,
           tabBarBadgeStyle: {
             backgroundColor: 'rgb(70, 240, 238)',
@@ -90,9 +90,9 @@ const HomeCustomer = ({ navigation, route }) => {
         component={ContactAdminScreen}
         options={{
           tabBarLabel: 'ติดต่อ Admin',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name="contact-phone" color="white" size={size} />
-          ),
+          // tabBarIcon: ({ color, size }) => (
+          //   <MaterialIcons name="contact-phone" color="white" size={size} />
+          // ),
         }}
         initialParams={{ userId, status }}
       />
@@ -101,9 +101,9 @@ const HomeCustomer = ({ navigation, route }) => {
         component={LogoutScreen}
         options={{
           tabBarLabel: 'Logout',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="logout" color="white" size={size} />
-          ),
+          // tabBarIcon: ({ color, size }) => (
+          //   <MaterialCommunityIcons name="logout" color="white" size={size} />
+          // ),
         }}
         initialParams={{ userId, status }}
       />

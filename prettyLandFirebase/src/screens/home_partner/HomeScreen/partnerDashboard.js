@@ -9,7 +9,7 @@ import {
   Alert,
 } from 'react-native';
 
-import BroadcastNews from '../../../components/BroadcastNews';
+// import BroadcastNews from '../../../components/BroadcastNews';
 
 /* import data */
 import firebase from '../../../util/firebase';
@@ -175,7 +175,7 @@ const PartnerDashboard = ({ navigation, route }) => {
       source={AppConfig.bgImage}
       style={styles.imageBg}
       resizeMode="contain">
-      {modelData &&
+      {/* {modelData &&
         modelData.map((item, index) => (
           <BroadcastNews
             key={`${userId}/${item.id}`}
@@ -186,7 +186,7 @@ const PartnerDashboard = ({ navigation, route }) => {
             imageUrl={item.image_url}
             userId={userId}
           />
-        ))}
+        ))} */}
       {items.length > 0 && (
         <View style={styles.container}>
           {profile.type1 && (

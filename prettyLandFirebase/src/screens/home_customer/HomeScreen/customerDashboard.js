@@ -9,7 +9,7 @@ import {
   Alert,
 } from 'react-native';
 
-import BroadcastNews from '../../../components/BroadcastNews';
+// import BroadcastNews from '../../../components/BroadcastNews';
 
 /* import data */
 import { getModelDataList } from '../../../apis';
@@ -177,7 +177,7 @@ const CustomerDashboard = ({ navigation, route }) => {
       source={AppConfig.bgImage}
       style={styles.imageBg}
       resizeMode="contain">
-      {modelData &&
+      {/* {modelData &&
         modelData.map((item, index) => (
           <BroadcastNews
             key={`${userId}/${item.id}`}
@@ -188,7 +188,7 @@ const CustomerDashboard = ({ navigation, route }) => {
             imageUrl={item.image_url}
             userId={userId}
           />
-        ))}
+        ))} */}
       {items.length > 0 && (
         <View style={styles.container}>
           <DisplayCard

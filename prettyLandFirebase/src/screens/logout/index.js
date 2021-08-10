@@ -13,7 +13,7 @@ import { MaterialIcons } from 'react-native-vector-icons';
 import { AppConfig } from '../../Constants';
 
 const LogoutScreen = ({ navigation, route }) => {
-  const signOut = () => console.log('signOut');
+  const signOut = () => navigation.navigate('WelcomeApp');
 
   LogBox.ignoreLogs(['Setting a timer']);
 

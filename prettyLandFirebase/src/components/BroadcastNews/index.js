@@ -8,7 +8,7 @@ import {
   Image,
   Dimensions,
 } from 'react-native';
-import { AntDesign } from 'react-native-vector-icons';
+// import { AntDesign } from 'react-native-vector-icons';
 // import * as WebBrowser from 'expo-web-browser';
 // import * as Linking from 'expo-linking';
 
@@ -70,7 +70,7 @@ const BroadcastNews = ({
               top: 10,
               padding: 5,
             }}>
-            <AntDesign name="close" color="white" size={32} />
+            {/* <AntDesign name="close" color="white" size={32} /> */}
           </TouchableHighlight>
           <TouchableHighlight
             underlayColor="white"
