@@ -90,9 +90,9 @@ const HomePartner = ({ navigation, route }) => {
         component={HomeNavigator}
         options={{
           title: 'โหมดงาน',
-          tabBarIcon: ({ color, size }) => (
-            <FontAwesome5 name="kiss-wink-heart" color="white" size={size} />
-          ),
+          // tabBarIcon: ({ color, size }) => (
+          //   <FontAwesome5 name="kiss-wink-heart" color="white" size={size} />
+          // ),
         }}
         initialParams={{ userId, status }}
       />
@@ -101,9 +101,9 @@ const HomePartner = ({ navigation, route }) => {
         component={RequestNavigator}
         options={{
           title: 'งานที่เสนอ',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name="request-quote" color="white" size={size} />
-          ),
+          // tabBarIcon: ({ color, size }) => (
+          //   <MaterialIcons name="request-quote" color="white" size={size} />
+          // ),
           tabBarBadge: reqCount ? reqCount : null,
           tabBarBadgeStyle: {
             backgroundColor: 'rgb(70, 240, 238)',
@@ -117,9 +117,9 @@ const HomePartner = ({ navigation, route }) => {
         component={WorkNavigator}
         options={{
           title: 'งานของฉัน',
-          tabBarIcon: ({ color, size }) => (
-            <Foundation name="social-foursquare" color="white" size={size} />
-          ),
+          // tabBarIcon: ({ color, size }) => (
+          //   <Foundation name="social-foursquare" color="white" size={size} />
+          // ),
           tabBarBadge: myPostCount ? myPostCount : null,
           tabBarBadgeStyle: {
             backgroundColor: 'rgb(70, 240, 238)',
@@ -133,13 +133,13 @@ const HomePartner = ({ navigation, route }) => {
         component={ProfileNavigator}
         options={{
           title: 'ข้อมูลส่วนตัว',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons
-              name="card-account-details"
-              color="white"
-              size={size}
-            />
-          ),
+          // tabBarIcon: ({ color, size }) => (
+          //   <MaterialCommunityIcons
+          //     name="card-account-details"
+          //     color="white"
+          //     size={size}
+          //   />
+          // ),
         }}
         initialParams={{ userId, status }}
       />
@@ -148,9 +148,9 @@ const HomePartner = ({ navigation, route }) => {
         component={LogoutScreen}
         options={{
           title: 'Logout',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="logout" color="white" size={size} />
-          ),
+          // tabBarIcon: ({ color, size }) => (
+          //   <MaterialCommunityIcons name="logout" color="white" size={size} />
+          // ),
         }}
         initialParams={{ userId, status }}
       />

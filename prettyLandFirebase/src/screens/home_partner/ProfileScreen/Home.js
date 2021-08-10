@@ -137,11 +137,11 @@ const ProfileHomeScreen = ({ navigation, route }) => {
                 resizeMode="cover"
               />
             </View>
-            <TouchableNativeFeedback onPress={handleEditForm}>
+            {/* <TouchableNativeFeedback onPress={handleEditForm}>
               <View style={styles.edit}>
                 <Feather name="edit" size={32} color="#fff" />
               </View>
-            </TouchableNativeFeedback>
+            </TouchableNativeFeedback> */}
           </View>
 
           <View style={styles.infoContainer}>
@@ -155,12 +155,12 @@ const ProfileHomeScreen = ({ navigation, route }) => {
                 marginTop: 10,
                 alignSelf: 'flex-start',
               }}>
-              <FontAwesome
+              {/* <FontAwesome
                 name="phone"
                 size={16}
                 color="#aeb5bc"
                 style={{ marginRight: 10 }}
-              />
+              /> */}
               <Text
                 style={[
                   styles.text,
@@ -168,12 +168,12 @@ const ProfileHomeScreen = ({ navigation, route }) => {
                 ]}>
                 {mobile}
               </Text>
-              <FontAwesome5
+              {/* <FontAwesome5
                 name="line"
                 size={16}
                 color="#aeb5bc"
                 style={{ marginRight: 10 }}
-              />
+              /> */}
               <Text style={[styles.text, { color: '#bbb', fontSize: 14 }]}>
                 {lineId}
               </Text>
@@ -215,7 +215,7 @@ const ProfileHomeScreen = ({ navigation, route }) => {
               <Text style={[styles.text, styles.subText]}>วันที่เริ่มงาน</Text>
             </View>
           </View>
-          {videoUrl && (
+          {/* {videoUrl && (
             <View
               style={{
                 marginTop: 5,
@@ -230,7 +230,7 @@ const ProfileHomeScreen = ({ navigation, route }) => {
                 isLooping
               />
             </View>
-          )}
+          )} */}
           {!img1 && !img2 && !img3 && !img4 && !img5 && !videoUrl && (
             <View style={{ alignItems: 'center', margin: 50 }}>
               <Text style={{ fontSize: 20 }}>
@@ -244,14 +244,14 @@ const ProfileHomeScreen = ({ navigation, route }) => {
                   borderRadius: 10,
                   padding: 15,
                 }}
-                icon={
-                  <MaterialCommunityIcons
-                    name="card-account-details-star-outline"
-                    size={24}
-                    color="white"
-                    style={{ marginRight: 10 }}
-                  />
-                }
+                // icon={
+                //   <MaterialCommunityIcons
+                //     name="card-account-details-star-outline"
+                //     size={24}
+                //     color="white"
+                //     style={{ marginRight: 10 }}
+                //   />
+                // }
                 onPress={handleEditForm}
               />
             </View>
