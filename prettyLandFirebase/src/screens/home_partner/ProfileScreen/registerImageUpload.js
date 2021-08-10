@@ -25,8 +25,7 @@ import { GetIcon } from '../../../components/GetIcons';
 import { getMemberProfile } from '../../../apis';
 
 const RegisterImageUpload = ({ navigation, route }) => {
-  const signOut = () => console.log('signOut');
-  const { userId, bankData } = route.params;
+  const { userId, bankData, goTo } = route.params;
   const video = useRef(null);
 
   const [uploadFinish, setUploadFinish] = useState('none');
@@ -86,7 +85,7 @@ const RegisterImageUpload = ({ navigation, route }) => {
       'ลงทะเบียนเรียบร้อย !',
       'โปรดแคปหน้าจอนี้แล้วส่งให้ Admin ทางไลน์@ เพื่อทำการอนุมัติบัญชีของคุณ',
     );
-    signOut();
+    navigation.navigate(goTo ? goTo : 'WelcomeApp');
   };
 
   const selectImage = async handleImg => {

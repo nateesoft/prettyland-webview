@@ -19,7 +19,7 @@ import { AppConfig } from '../../../Constants';
 
 const RegisterPartnerBankForm = ({ navigation, route }) => {
   const { navigate } = navigation;
-  const { userId, status, partnerData, appconfig } = route.params;
+  const { userId, status, partnerData, appconfig, goTo } = route.params;
   const [bank, setBank] = useState('');
   const [bankNo, setBankNo] = useState('');
 
@@ -43,7 +43,7 @@ const RegisterPartnerBankForm = ({ navigation, route }) => {
       bankNo,
     };
 
-    navigate('Partner-Register-Image-Upload', {
+    navigate(goTo ? goTo : 'Partner-Register-Image-Upload', {
       userId,
       status,
       bankData,

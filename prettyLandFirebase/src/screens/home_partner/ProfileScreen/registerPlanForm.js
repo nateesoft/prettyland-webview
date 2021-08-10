@@ -30,7 +30,7 @@ const sexData = [
 
 const RegisterPlanForm = ({ navigation, route }) => {
   const { navigate } = navigation;
-  const { userId, status } = route.params;
+  const { userId, status, goTo } = route.params;
   const [items, setItems] = useState([]);
 
   const [type1, setType1] = useState(true);
@@ -84,7 +84,12 @@ const RegisterPlanForm = ({ navigation, route }) => {
       character,
     };
 
-    navigate('Register-Partner-Form', { userId, status, planData, appconfig });
+    navigate(goTo ? goTo : 'Register-Partner-Form', {
+      userId,
+      status,
+      planData,
+      appconfig,
+    });
   };
 
   const getAppConfigItem = snapshot => {

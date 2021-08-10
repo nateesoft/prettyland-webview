@@ -21,7 +21,7 @@ import { getMemberProfile } from '../../../apis';
 
 const RegisterPartnerForm = ({ navigation, route }) => {
   const { navigate } = navigation;
-  const { userId, status, planData, appconfig } = route.params;
+  const { userId, status, planData, appconfig, goTo } = route.params;
   const { type4 } = planData;
   const [mobile, setMobile] = useState('');
   const [province, setProvince] = useState('');
@@ -63,7 +63,7 @@ const RegisterPartnerForm = ({ navigation, route }) => {
       lineId,
     };
 
-    navigate('Partner-Register-Bank-Form', {
+    navigate(goTo ? goTo : 'Partner-Register-Bank-Form', {
       userId,
       status,
       partnerData,
