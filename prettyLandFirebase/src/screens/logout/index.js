@@ -8,7 +8,7 @@ import {
   LogBox,
 } from 'react-native';
 import { Button } from 'react-native-elements';
-import { MaterialIcons } from 'react-native-vector-icons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 import { AppConfig } from '../../Constants';
 

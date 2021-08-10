@@ -7,7 +7,7 @@ import {
   SafeAreaView,
 } from 'react-native';
 import { Button, Text, Input } from 'react-native-elements';
-import { FontAwesome } from 'react-native-vector-icons';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import base64 from 'react-native-base64';
 
 import { getMemberProfile } from '../../../apis';

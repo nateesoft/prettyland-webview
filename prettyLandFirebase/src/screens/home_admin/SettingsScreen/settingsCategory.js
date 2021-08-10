@@ -7,12 +7,10 @@ import {
   SafeAreaView,
 } from 'react-native';
 import { Button, Text } from 'react-native-elements';
-import {
-  FontAwesome,
-  MaterialIcons,
-  Ionicons,
-  MaterialCommunityIcons,
-} from 'react-native-vector-icons';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import { AppConfig } from '../../../Constants';
 

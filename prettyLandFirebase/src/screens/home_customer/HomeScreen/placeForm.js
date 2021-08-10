@@ -10,8 +10,7 @@ import {
   Button,
 } from 'react-native';
 import { Text, Button as ButtonAction } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import { FontAwesome } from 'react-native-vector-icons';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import RadioButtonRN from 'radio-buttons-react-native';
 import { TextInputMask } from 'react-native-masked-text';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
@@ -231,7 +230,7 @@ const PlaceForm = props => {
             <View style={styles.buttonFooter}>
               <ButtonAction
                 icon={
-                  <Icon
+                  <FontAwesome
                     name="save"
                     size={20}
                     color="white"

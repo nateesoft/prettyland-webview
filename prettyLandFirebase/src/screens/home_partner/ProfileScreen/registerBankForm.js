@@ -7,7 +7,7 @@ import {
   ImageBackground,
   SafeAreaView,
 } from 'react-native';
-import { AntDesign } from 'react-native-vector-icons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import { Button } from 'react-native-elements';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { TextInputMask } from 'react-native-masked-text';

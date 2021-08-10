@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import {
-  FontAwesome5,
-  Foundation,
-  MaterialCommunityIcons,
-  MaterialIcons,
-} from 'react-native-vector-icons';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import Foundation from 'react-native-vector-icons/Foundation';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 /* all screen */
 import HomeNavigator from './HomeScreen/navigator';

@@ -10,7 +10,9 @@ import {
 } from 'react-native';
 // import Video from 'react-native-video';
 import { Button, Text } from 'react-native-elements';
-import { Ionicons, Feather, AntDesign } from 'react-native-vector-icons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import Feather from 'react-native-vector-icons/Feather';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import Moment from 'moment';
 // import { ActivityIndicator } from 'react-native-paper';
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, ImageBackground, Alert } from 'react-native';
 import { Button, Text, Input } from 'react-native-elements';
-import { FontAwesome } from 'react-native-vector-icons';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 import firebase from '../../../util/firebase';
 import { getDocument } from '../../../util';

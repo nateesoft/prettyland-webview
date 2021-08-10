@@ -7,7 +7,7 @@ import {
   ImageBackground,
 } from 'react-native';
 import { Button, Text } from 'react-native-elements';
-import { Ionicons } from 'react-native-vector-icons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import { AppConfig } from '../../../Constants';
 import firebase from '../../../util/firebase';

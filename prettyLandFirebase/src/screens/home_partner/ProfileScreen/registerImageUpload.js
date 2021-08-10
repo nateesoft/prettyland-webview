@@ -14,7 +14,8 @@ import {
 import * as Progress from 'react-native-progress';
 import * as ImagePicker from 'react-native-image-picker';
 import Video from 'react-native-video';
-import { AntDesign, MaterialCommunityIcons } from 'react-native-vector-icons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Button } from 'react-native-elements';
 
 import { AppConfig } from '../../../Constants';
