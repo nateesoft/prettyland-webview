@@ -27,7 +27,10 @@ const PostListAllScreen = ({ navigation, route }) => {
 
   const onPressOptions = (item, status) => {
     if (status === AppConfig.PostsStatus.waitAdminConfirmPayment) {
-      navigation.navigate('Verify-Payment-Slip', { item, topic: itemData.name });
+      navigation.navigate('Verify-Payment-Slip', {
+        item,
+        topic: itemData.name,
+      });
     } else {
       navigation.navigate('Detail-Task', { item, topic: itemData.name });
     }
@@ -48,16 +51,14 @@ const PostListAllScreen = ({ navigation, route }) => {
           ชื่อลูกค้า: {item.customerName}
         </ListItem.Title>
         <ListItem.Title
-          style={{ marginVertical: 5, fontSize: 16, fontWeight: 'bold' }}
-        >
+          style={{ marginVertical: 5, fontSize: 16, fontWeight: 'bold' }}>
           Level: {item.customerLevel}
         </ListItem.Title>
         <ListItem.Subtitle style={{ fontSize: 16 }}>
           ประเภทงาน: {itemData.name}
         </ListItem.Subtitle>
         <ListItem.Subtitle
-          style={{ marginVertical: 5, fontSize: 16, fontWeight: 'bold' }}
-        >
+          style={{ marginVertical: 5, fontSize: 16, fontWeight: 'bold' }}>
           Status: {item.statusText}
         </ListItem.Subtitle>
         <ListItem.Subtitle style={{ marginVertical: 5, fontSize: 14 }}>
@@ -163,7 +164,7 @@ const PostListAllScreen = ({ navigation, route }) => {
       .ref(getDocument('posts'))
       .orderByChild('partnerRequest')
       .equalTo(partnerRequest);
-    const listener = ref.on('value', (snapshot) => {
+    const listener = ref.on('value', snapshot => {
       const postsList = snapshotToArray(snapshot);
       getFilterData(postsList).then(res => {
         setPosts(
@@ -233,7 +234,7 @@ const styles = StyleSheet.create({
   imageBg: {
     flex: 1,
     resizeMode: 'cover',
-    justifyContent: 'center',,
+    justifyContent: 'center',
   },
 });
 

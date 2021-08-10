@@ -9,7 +9,7 @@ import {
   ImageBackground,
   Alert,
 } from 'react-native';
-import { Video } from 'expo-av';
+import Video from 'react-native-video';
 import { AntDesign } from 'react-native-vector-icons';
 import { Button } from 'react-native-elements';
 import * as Progress from 'react-native-progress';

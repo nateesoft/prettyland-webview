@@ -21,8 +21,8 @@ import * as Progress from 'react-native-progress';
 import { savePaymentSlip } from '../../../apis';
 import { getBankName } from '../../../data/apis';
 import { GetIcon } from '../../../components/GetIcons';
-import firebase from '../../../../util/firebase';
-import { getDocument } from '../../../../util';
+import firebase from '../../../util/firebase';
+import { getDocument } from '../../../util';
 import { AppConfig } from '../../../Constants';
 
 // bank

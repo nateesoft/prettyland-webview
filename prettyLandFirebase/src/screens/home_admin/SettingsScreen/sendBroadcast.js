@@ -149,7 +149,7 @@ const SendBroadcast = ({ navigation, route }) => {
         time_send: timeSend,
         image_url: url,
         link_connect: linkConnect,
-        status: 'active',,
+        status: 'active',
       });
 
     setLoading('finish');
@@ -194,7 +194,7 @@ const SendBroadcast = ({ navigation, route }) => {
           flex: 1,
           height: '100%',
           alignItems: 'center',
-          justifyContent: 'center',,
+          justifyContent: 'center',
         }}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <View style={{ margin: 10 }}>
@@ -327,7 +327,7 @@ const styles = StyleSheet.create({
     margin: 15,
     paddingHorizontal: 50,
     borderRadius: 5,
-    backgroundColor: '#ff2fe6',,
+    backgroundColor: '#ff2fe6',
   },
   cardDetail: {
     alignItems: 'center',
@@ -361,7 +361,7 @@ const styles = StyleSheet.create({
   imageBg: {
     flex: 1,
     resizeMode: 'cover',
-    justifyContent: 'center',,
+    justifyContent: 'center',
   },
   inputForm: {
     width: '90%',

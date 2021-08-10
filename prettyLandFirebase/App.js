@@ -10,6 +10,10 @@ import NotificationScreen from './src/screens/NotificationScreen';
 import RegisterHome from './src/screens/register';
 import LoginHome from './src/screens/login';
 
+import AdminHome from './src/screens/home_admin';
+import PartnerHome from './src/screens/home_partner';
+import CustomerHome from './src/screens/home_customer';
+
 const Stack = createNativeStackNavigator();
 
 const App = () => {
@@ -47,6 +51,22 @@ const App = () => {
           name="Login"
           component={LoginHome}
           options={{ title: 'Login', headerShown: false }}
+        />
+        {/* Auth Screen */}
+        <Stack.Screen
+          name="AdminHome"
+          component={AdminHome}
+          options={{ title: 'Back', headerShown: false }}
+        />
+        <Stack.Screen
+          name="PartnerHome"
+          component={PartnerHome}
+          options={{ title: 'Back', headerShown: false }}
+        />
+        <Stack.Screen
+          name="CustomerHome"
+          component={CustomerHome}
+          options={{ title: 'Back', headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>

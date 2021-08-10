@@ -5,7 +5,7 @@ import {
   MaterialIcons,
   Feather,
   MaterialCommunityIcons,
-} from '@expo/vector-icons';
+} from 'react-native-vector-icons';
 
 /* all screen */
 import CustomerPostNavigator from './CustomerPostScreen/navigator';
@@ -31,7 +31,7 @@ const HomeAdmin = ({ navigation, route }) => {
       .ref(getDocument('members'))
       .orderByChild('status')
       .equalTo(AppConfig.MemberStatus.newRegister);
-    const listener = ref.on('value', (snapshot) => {
+    const listener = ref.on('value', snapshot => {
       setMemberCount(snapshot.numChildren());
     });
     return () => ref.off('value', listener);
@@ -43,7 +43,7 @@ const HomeAdmin = ({ navigation, route }) => {
         activeTintColor: 'purple',
         inactiveTintColor: 'white',
         style: {
-          backgroundColor: '#ff2fe6',,
+          backgroundColor: '#ff2fe6',
         },
       }}>
       <Tab.Screen
@@ -68,7 +68,7 @@ const HomeAdmin = ({ navigation, route }) => {
           tabBarBadge: memberCount ? memberCount : null,
           tabBarBadgeStyle: {
             backgroundColor: 'rgb(70, 240, 238)',
-            color: 'red',,
+            color: 'red',
           },
         }}
         initialParams={{ userId }}
