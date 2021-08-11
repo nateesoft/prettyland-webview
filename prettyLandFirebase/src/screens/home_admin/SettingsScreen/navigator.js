@@ -93,7 +93,6 @@ const AdminSettingsNavigator = ({ navigation, route }) => {
             backgroundColor: '#ff2fe6',
           },
           headerTintColor: 'white',
-          headerTitle: props => <LogoTitle title="Pretty Land" {...props} />,
         }}
       />
       <Stack.Screen
@@ -105,7 +104,6 @@ const AdminSettingsNavigator = ({ navigation, route }) => {
             backgroundColor: '#ff2fe6',
           },
           headerTintColor: 'white',
-          headerTitle: props => <LogoTitle title="Pretty Land" {...props} />,
         }}
       />
       <Stack.Screen
@@ -129,7 +127,6 @@ const AdminSettingsNavigator = ({ navigation, route }) => {
             backgroundColor: '#ff2fe6',
           },
           headerTintColor: 'white',
-          headerTitle: props => <LogoTitle title="Pretty Land" {...props} />,
         }}
       />
     </Stack.Navigator>

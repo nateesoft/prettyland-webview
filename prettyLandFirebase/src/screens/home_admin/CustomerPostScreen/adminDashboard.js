@@ -209,7 +209,7 @@ const styles = StyleSheet.create({
   box: {
     width: '50%',
     height: '50%',
-    padding: 5,
+    padding: 3,
   },
   inner: {
     flex: 1,

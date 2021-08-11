@@ -7,6 +7,7 @@ import {
   Image,
   ImageBackground,
   Alert,
+  SafeAreaView,
 } from 'react-native';
 
 // import BroadcastNews from '../../../components/BroadcastNews';
@@ -177,7 +178,8 @@ const CustomerDashboard = ({ navigation, route }) => {
       source={AppConfig.bgImage}
       style={styles.imageBg}
       resizeMode="contain">
-      {/* {modelData &&
+      <SafeAreaView style={{ height: '93%' }}>
+        {/* {modelData &&
         modelData.map((item, index) => (
           <BroadcastNews
             key={`${userId}/${item.id}`}
@@ -189,30 +191,31 @@ const CustomerDashboard = ({ navigation, route }) => {
             userId={userId}
           />
         ))} */}
-      {items.length > 0 && (
-        <View style={styles.container}>
-          <DisplayCard
-            data={items[0]}
-            countGirl={sumGirl1}
-            countBoy={sumBoy1}
-          />
-          <DisplayCard
-            data={items[1]}
-            countGirl={sumGirl2}
-            countBoy={sumBoy2}
-          />
-          <DisplayCard
-            data={items[2]}
-            countGirl={sumGirl3}
-            countBoy={sumBoy3}
-          />
-          <DisplayCard
-            data={items[3]}
-            countGirl={sumGirl4}
-            countBoy={sumBoy4}
-          />
-        </View>
-      )}
+        {items.length > 0 && (
+          <View style={styles.container}>
+            <DisplayCard
+              data={items[0]}
+              countGirl={sumGirl1}
+              countBoy={sumBoy1}
+            />
+            <DisplayCard
+              data={items[1]}
+              countGirl={sumGirl2}
+              countBoy={sumBoy2}
+            />
+            <DisplayCard
+              data={items[2]}
+              countGirl={sumGirl3}
+              countBoy={sumBoy3}
+            />
+            <DisplayCard
+              data={items[3]}
+              countGirl={sumGirl4}
+              countBoy={sumBoy4}
+            />
+          </View>
+        )}
+      </SafeAreaView>
     </ImageBackground>
   );
 };

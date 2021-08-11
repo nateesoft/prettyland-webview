@@ -47,7 +47,10 @@ const HomeCustomer = ({ navigation, route }) => {
   }, []);
 
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        tabBarStyle: { backgroundColor: '#ff2fe6' },
+      }}>
       <Tab.Screen
         name="c-Home"
         component={HomeScreen}

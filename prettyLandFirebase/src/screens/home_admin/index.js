@@ -38,15 +38,15 @@ const HomeAdmin = ({ navigation, route }) => {
 
   return (
     <Tab.Navigator
-      screenOptions={() => ({
-        tabBarActiveTintColor: 'tomato',
-        tabBarInactiveTintColor: 'gray',
-      })}>
+      screenOptions={{
+        tabBarStyle: { backgroundColor: '#ff2fe6' },
+      }}>
       <Tab.Screen
         name="a-Task"
         component={CustomerPostNavigator}
         options={{
           title: 'โพสท์ทั้งหมด',
+          headerShown: false,
           tabBarIcon: ({ color, size }) => (
             <MaterialIcons name="fact-check" color="white" size={size} />
           ),

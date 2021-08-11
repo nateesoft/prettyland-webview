@@ -11,7 +11,7 @@ import {
   Image,
   Button,
 } from 'react-native';
-import * as ImagePicker from 'react-native-image-picker';
+import { launchImageLibrary } from 'react-native-image-picker';
 import { Button as ButtonAction, Text } from 'react-native-elements';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import uuid from 'react-native-uuid';
@@ -156,32 +156,30 @@ const SendBroadcast = ({ navigation, route }) => {
     Alert.alert('บันทึกส่งข้อมูลเรียบร้อยแล้ว');
   }
 
-  const pickImage = async () => {
-    let result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.All,
-      aspect: [4, 3],
-      quality: 1,
-    });
+  const selectImage = async () => {
+    let options = {
+      title: 'Select Image',
+      customButtons: [
+        { name: 'customOptionKey', title: 'Choose Photo from Custom Option' },
+      ],
+      storageOptions: {
+        skipBackup: true,
+        path: 'images',
+      },
+    };
 
-    if (!result.cancelled) {
-      setImage(result.uri);
-    }
-  };
-
-  useEffect(() => {
-    (async () => {
-      if (Platform.OS !== 'web') {
-        const { status } =
-          await ImagePicker.requestMediaLibraryPermissionsAsync();
-        if (status !== 'granted') {
-          Alert.alert(
-            'แจ้งเตือน',
-            'ขออภัย, กรุณาให้สิทธิืการเข้าถึงรูปภาพของท่าน!',
-          );
-        }
+    launchImageLibrary(options, response => {
+      if (response.didCancel) {
+        console.log('User cancelled image picker');
+      } else if (response.error) {
+        console.log('ImagePicker Error: ', response.error);
+      } else if (response.customButton) {
+        console.log('User tapped custom button: ', response.customButton);
+      } else {
+        setImage(response.assets[0].uri);
       }
-    })();
-  }, []);
+    });
+  };
 
   return (
     <ImageBackground
@@ -284,7 +282,7 @@ const SendBroadcast = ({ navigation, route }) => {
               }
               buttonStyle={{ marginTop: 10 }}
               title="เลือกไฟล์รูปภาพ"
-              onPress={pickImage}
+              onPress={selectImage}
             />
           </View>
           <View style={{ alignSelf: 'center' }}>

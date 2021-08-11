@@ -23,8 +23,17 @@ export const loginApp = (username, password) => {
             member.username === username &&
             base64.decode(member.password) === password
           ) {
-            isValid = true;
-            memberObj = member;
+            if (member.memberType === 'partner') {
+              if (member.status === AppConfig.MemberStatus.active) {
+                isValid = true;
+                memberObj = member;
+              } else {
+                Alert.alert('บัญชีของท่านกำลังอยู่ระหว่างการพิจารณาอนุมัติ!');
+              }
+            } else {
+              isValid = true;
+              memberObj = member;
+            }
           }
         }
         resolve({ valid: isValid, member: memberObj });

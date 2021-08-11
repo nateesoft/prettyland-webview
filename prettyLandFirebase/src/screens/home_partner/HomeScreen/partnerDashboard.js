@@ -7,6 +7,7 @@ import {
   Image,
   ImageBackground,
   Alert,
+  SafeAreaView,
 } from 'react-native';
 
 // import BroadcastNews from '../../../components/BroadcastNews';
@@ -175,7 +176,8 @@ const PartnerDashboard = ({ navigation, route }) => {
       source={AppConfig.bgImage}
       style={styles.imageBg}
       resizeMode="contain">
-      {/* {modelData &&
+      <SafeAreaView style={{ height: '93%' }}>
+        {/* {modelData &&
         modelData.map((item, index) => (
           <BroadcastNews
             key={`${userId}/${item.id}`}
@@ -187,42 +189,43 @@ const PartnerDashboard = ({ navigation, route }) => {
             userId={userId}
           />
         ))} */}
-      {items.length > 0 && (
-        <View style={styles.container}>
-          {profile.type1 && (
-            <DisplayCard
-              data={items[0]}
-              count={sumType1}
-              type={AppConfig.PartnerType.type1}
-              badge={postType1Count}
-            />
-          )}
-          {profile.type2 && (
-            <DisplayCard
-              data={items[1]}
-              count={sumType2}
-              type={AppConfig.PartnerType.type2}
-              badge={postType2Count}
-            />
-          )}
-          {profile.type3 && (
-            <DisplayCard
-              data={items[2]}
-              count={sumType3}
-              type={AppConfig.PartnerType.type3}
-              badge={postType3Count}
-            />
-          )}
-          {profile.type4 && (
-            <DisplayCard
-              data={items[3]}
-              count={sumType4}
-              type={AppConfig.PartnerType.type4}
-              badge={0}
-            />
-          )}
-        </View>
-      )}
+        {items.length > 0 && (
+          <View style={styles.container}>
+            {profile.type1 && (
+              <DisplayCard
+                data={items[0]}
+                count={sumType1}
+                type={AppConfig.PartnerType.type1}
+                badge={postType1Count}
+              />
+            )}
+            {profile.type2 && (
+              <DisplayCard
+                data={items[1]}
+                count={sumType2}
+                type={AppConfig.PartnerType.type2}
+                badge={postType2Count}
+              />
+            )}
+            {profile.type3 && (
+              <DisplayCard
+                data={items[2]}
+                count={sumType3}
+                type={AppConfig.PartnerType.type3}
+                badge={postType3Count}
+              />
+            )}
+            {profile.type4 && (
+              <DisplayCard
+                data={items[3]}
+                count={sumType4}
+                type={AppConfig.PartnerType.type4}
+                badge={0}
+              />
+            )}
+          </View>
+        )}
+      </SafeAreaView>
     </ImageBackground>
   );
 };
