@@ -116,7 +116,6 @@ const RegisterLoginForm = ({ navigation, route }) => {
               <View style={styles.formControl}>
                 <GetIcon type="ad" name="user" />
                 <TextInput
-                  style={styles.textInput}
                   placeholder="ข้อมูลผู้ใช้งาน"
                   value={username}
                   onChangeText={value => setUsername(value)}
@@ -133,7 +132,6 @@ const RegisterLoginForm = ({ navigation, route }) => {
               <View style={styles.formControl}>
                 <GetIcon type="mci" name="form-textbox-password" />
                 <TextInput
-                  style={styles.textInput}
                   placeholder="กำหนดรหัสผ่าน"
                   secureTextEntry={true}
                   value={password}
@@ -149,7 +147,6 @@ const RegisterLoginForm = ({ navigation, route }) => {
               <View style={styles.formControl}>
                 <GetIcon type="mci" name="form-textbox-password" />
                 <TextInput
-                  style={styles.textInput}
                   placeholder="ยืนยันรหัสผ่านอีกครั้ง"
                   secureTextEntry={true}
                   value={rePassword}

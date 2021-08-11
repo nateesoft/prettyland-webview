@@ -91,7 +91,6 @@ const LoginForm = ({ navigation, route }) => {
                 }}>
                 <AntDesign name="user" color="#00716F" size={20} />
                 <TextInput
-                  style={styles.textInput}
                   placeholder="ข้อมูลผู้ใช้งาน (Username)"
                   value={username}
                   onChangeText={value => setUsername(value)}
@@ -115,7 +114,6 @@ const LoginForm = ({ navigation, route }) => {
                 <FontAwesome name="lock" color="#00716F" size={20} />
                 <TextInput
                   secureTextEntry={true}
-                  style={styles.textInput}
                   placeholder="รหัสผาน (Password)"
                   value={password}
                   onChangeText={value => setPassword(value)}
