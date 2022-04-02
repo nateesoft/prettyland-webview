@@ -257,7 +257,6 @@ const PaymentForm = ({ navigation, route }) => {
               <View style={styles.formControl}>
                 <GetIcon type="fa" name="dollar" />
                 <TextInput
-                  style={styles.textInput}
                   placeholder="จำนวนเงินทีต้องชำระ (บาท)"
                   value={partnerAmount}
                   onChangeText={value => setPartnerAmount(value)}
@@ -270,7 +269,6 @@ const PaymentForm = ({ navigation, route }) => {
               <View style={styles.formControl}>
                 <GetIcon type="fa" name="dollar" />
                 <TextInput
-                  style={styles.textInput}
                   placeholder="ค่าธรรมเนียม (บาท)"
                   value={feeAmount}
                   onChangeText={value => setFeeAmount(value)}
@@ -283,7 +281,6 @@ const PaymentForm = ({ navigation, route }) => {
               <View style={styles.formControl}>
                 <GetIcon type="fa" name="dollar" />
                 <TextInput
-                  style={styles.textInput}
                   placeholder="รวมยอดชำระทั้งหมด"
                   value={netTotalAmount}
                   onChangeText={value => setNetTotalAmount(value)}
@@ -345,7 +342,6 @@ const PaymentForm = ({ navigation, route }) => {
               <View style={styles.formControl}>
                 <GetIcon type="mci" name="text-box-check-outline" />
                 <TextInput
-                  style={styles.textInput}
                   placeholder="เลขที่บัญชีปลายทาง"
                   value={toAccount}
                   keyboardType="number-pad"
@@ -356,7 +352,6 @@ const PaymentForm = ({ navigation, route }) => {
               <View style={styles.formControl}>
                 <GetIcon type="fa" name="dollar" />
                 <TextInput
-                  style={styles.textInput}
                   placeholder="ยอดเงินโอน (บาท)"
                   value={transferAmount}
                   onChangeText={value => setTransferAmount(value)}
